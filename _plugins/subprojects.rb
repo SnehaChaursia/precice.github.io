@@ -6,12 +6,8 @@ module Jekyll
 
     def generate(site)
 
-      image_dest = "images"
-
       # Contains all static files required by tutorials
       new_static_files = []
-      # Contains the filenames of statics and which subproject they belong to
-      static_filenames = {}
 
       # Generate configured tutorials
       (site.config['subprojects'] || []).each do |location|
@@ -24,6 +20,9 @@ module Jekyll
           raise RuntimeError, message
         end
 
+        # Namespace images to avoid filename collisions
+        image_dest = File.join("images", location)
+
         # Register the tutorial README as a page
         pages = Dir.chdir(location) do 
           Dir.foreach(".").reject{ |f| File.directory?(f) || f.end_with?(".") }.select{ |f| Utils.has_yaml_header?(site.in_source_dir(File.join(location, f))) }
@@ -32,29 +31,33 @@ module Jekyll
         unless pages.empty?()
           Jekyll.logger.info("Adding pages:", pages.join(", "))
           pages.each do |file|
-            site.pages << Page.new(site, site.source, location, file)
+            # Create the Jekyll Page
+            page = Page.new(site, site.source, location, file)
+            
+            # Rewrite markdown image links and HTML src tags to use the new namespaced path.
+            if page.content
+               page.content = page.content.gsub(/\]\(images\//, "](/" + image_dest + "/")
+               page.content = page.content.gsub(/src="images\//, "src=\"/" + image_dest + "/")
+               page.content = page.content.gsub(/\]\(\.\/images\//, "](/" + image_dest + "/")
+               page.content = page.content.gsub(/src="\.\/images\//, "src=\"/" + image_dest + "/")
+            end
+
+            site.pages << page
           end
         end
 
-        # Copy all images to images/
+        # Copy all images to images/location/
         images = File.join(location, 'images')
 
         next unless File.directory?(site.in_source_dir(images))
+
+        FileUtils.mkdir_p(site.in_source_dir(image_dest))
 
         static_files = Dir.foreach(images).reject{ |f| File.directory?(f) || f.end_with?(".")}
         static_files.each do |image|
           from = File.join(images, image)
           to = File.join(image_dest, image)
           Jekyll.logger.debug("Registering:", "#{from}")
-
-          # Check for 
-          if static_filenames.include?(image)
-            message = "#{image} was already added by subproject #{static_filenames[image]}!"
-            Jekyll.logger.error("Collision detected:", message)
-            raise message
-          else
-            static_filenames[image] = location
-          end
 
           # Skip the copy if the file already exists. This solves endless rebuild loops.
           unless File.exist?(site.in_source_dir(to))
