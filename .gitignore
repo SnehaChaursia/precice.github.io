@@ -7,4 +7,4 @@ _pdf
 .idea
 vendor/
 .bundle/
-Gemfile.lock
+.vercel
