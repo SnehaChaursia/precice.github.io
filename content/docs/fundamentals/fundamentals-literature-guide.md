@@ -24,12 +24,12 @@ Talking about preCICE, at any level? Then, read and cite the latest preCICE refe
 {% for pub in site.publications %}
 {% if pub.title == "preCICE v2: A sustainable and user-friendly coupling library [version 2; peer review: 2 approved]" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card border-primary mb-3 panel-precice">
     <div class="panel-heading-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},
@@ -54,12 +54,12 @@ Are you using any of the adapters? Then, please also read and cite the respectiv
 {% for pub in site.publications %}
 {% if pub.title == "OpenFOAM-preCICE: Coupling OpenFOAM with External Solvers for Multi-Physics Simulations" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card border-primary mb-3 panel-precice">
     <div class="panel-heading-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},
@@ -78,12 +78,12 @@ Are you using any of the adapters? Then, please also read and cite the respectiv
 {% for pub in site.publications %}
 {% if pub.title == "FEniCS–preCICE: Coupling FEniCS to other simulation software" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card border-primary mb-3 panel-precice">
     <div class="panel-heading-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},
@@ -105,12 +105,12 @@ For the CalculiX, SU2, and code_aster adapters, as well as for the concept of an
 {% for pub in site.publications %}
 {% if pub.title == "Official preCICE Adapters for Standard Open-Source Solvers" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card border-primary mb-3 panel-precice">
     <div class="panel-heading-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},

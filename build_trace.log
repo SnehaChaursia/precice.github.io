@@ -1,0 +1,188 @@
+Configuration file: /home/sneha/precice.github.io/_config.yml
+            Source: /home/sneha/precice.github.io
+       Destination: /home/sneha/precice.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+        Subproject: imported/aste/docs
+      Adding pages: README.md
+        Subproject: imported/dumux-adapter/docs
+      Adding pages: use.md, get.md, overview.md
+        Subproject: imported/dune-adapter/docs
+      Adding pages: overview.md
+        Subproject: imported/fmi-runner/docs
+      Adding pages: README.md
+        Subproject: imported/micro-manager/docs
+      Adding pages: logging.md, running.md, adaptivity.md, snapshot_configuration.md, configuration.md, installation.md, micro-simulation-convert-to-library.md, README.md, model-adaptivity.md
+        Subproject: imported/openfoam-adapter/docs
+      Adding pages: config.md, get.md, extend.md, openfoam-support.md, README.md
+        Subproject: imported/preeco-orga/guidelines
+      Adding pages: guidelines-application-cases.md, guidelines-adapters.md, guidelines-adapters-opendihu.md, guidelines-adapters-issm.md, guideline-adapters-dumux.md, guidelines-adapters-openfoam.md
+        Subproject: imported/su2-adapter/docs
+      Adding pages: configure.md, get.md, overview.md
+        Subproject: imported/tutorials/aste-turbine
+      Adding pages: README.md
+        Subproject: imported/tutorials/breaking-dam-2d
+      Adding pages: README.md
+        Subproject: imported/tutorials/channel-transport
+      Adding pages: README.md
+        Subproject: imported/tutorials/channel-transport-reaction
+      Adding pages: README.md
+        Subproject: imported/tutorials/channel-transport-particles
+      Adding pages: README.md
+        Subproject: imported/tutorials/elastic-tube-1d
+      Adding pages: README.md
+        Subproject: imported/tutorials/elastic-tube-3d
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-around-controlled-moving-cylinder
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-over-heated-plate
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-over-heated-plate-nearest-projection
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-over-heated-plate-partitioned-flow
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-over-heated-plate-steady-state
+      Adding pages: README.md
+        Subproject: imported/tutorials/flow-over-heated-plate-two-meshes
+      Adding pages: README.md
+        Subproject: imported/tutorials/free-flow-over-porous-media
+      Adding pages: README.md
+        Subproject: imported/tutorials/heat-exchanger
+      Adding pages: README.md
+        Subproject: imported/tutorials/heat-exchanger-simplified
+      Adding pages: README.md
+        Subproject: imported/tutorials/multiple-perpendicular-flaps
+      Adding pages: README.md
+        Subproject: imported/tutorials/oscillator
+      Adding pages: README.md
+        Subproject: imported/tutorials/oscillator-overlap
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-backwards-facing-step
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-elastic-beam
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-heat-conduction
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-heat-conduction-complex
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-heat-conduction-direct
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-heat-conduction-overlap
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-pipe
+      Adding pages: README.md
+        Subproject: imported/tutorials/partitioned-pipe-two-phase
+      Adding pages: README.md
+        Subproject: imported/tutorials/perpendicular-flap
+      Adding pages: README.md
+        Subproject: imported/tutorials/perpendicular-flap-stress
+      Adding pages: README.md
+        Subproject: imported/tutorials/quickstart
+      Adding pages: README.md
+        Subproject: imported/tutorials/resonant-circuit
+      Adding pages: README.md
+        Subproject: imported/tutorials/tools/tests
+      Adding pages: README.md
+        Subproject: imported/tutorials/turek-hron-fsi3
+      Adding pages: README.md
+        Subproject: imported/tutorials/two-scale-heat-conduction
+      Adding pages: README.md
+        Subproject: imported/tutorials/volume-coupled-diffusion
+      Adding pages: README.md
+        Subproject: imported/tutorials/volume-coupled-flow
+      Adding pages: README.md
+[31m  Liquid Exception: Liquid syntax error (/home/sneha/precice.github.io/_includes/breadcrumb.html line 78): 'endif' is not a valid delimiter for for tags. use endfor included in /home/sneha/precice.github.io/_layouts/page.html[0m
+bundler: failed to load command: jekyll (/home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/bin/jekyll)
+/home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:33:in `unknown_tag': Liquid syntax error (/home/sneha/precice.github.io/_includes/breadcrumb.html line 78): 'endif' is not a valid delimiter for for tags. use endfor included  (Liquid::SyntaxError)
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/for.rb:69:in `unknown_tag'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:68:in `block in parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:32:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/for.rb:60:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/if.rb:30:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/if.rb:30:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/for.rb:60:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/for.rb:60:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block.rb:58:in `parse_body'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tags/if.rb:30:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/tag.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:34:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:10:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:5:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:130:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:114:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:13:in `block in parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:70:in `measure_time'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:12:in `parse'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/inclusion.rb:15:in `render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/tags/include.rb:208:in `block in render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/context.rb:123:in `stack'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/tags/include.rb:206:in `render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:103:in `render_node_to_output'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:91:in `render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:206:in `block in render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:240:in `with_profiling'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:205:in `render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:218:in `render!'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:39:in `block (3 levels) in render!'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:59:in `measure_counts'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:38:in `block (2 levels) in render!'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:63:in `measure_bytes'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:37:in `block in render!'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:70:in `measure_time'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:36:in `render!'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:129:in `render_liquid'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:192:in `render_layout'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:161:in `place_in_layouts'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:93:in `render_document'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `load'
+	from /home/sneha/precice.github.io/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `<top (required)>'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli/exec.rb:61:in `load'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli/exec.rb:61:in `kernel_load'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli/exec.rb:24:in `run'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli.rb:500:in `exec'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli.rb:35:in `dispatch'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/cli.rb:29:in `start'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/exe/bundle:28:in `block in <top (required)>'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/lib/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+	from /home/sneha/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-4.0.6/exe/bundle:20:in `<top (required)>'
+	from /home/sneha/.rbenv/versions/3.3.0/bin/bundle:25:in `load'
+	from /home/sneha/.rbenv/versions/3.3.0/bin/bundle:25:in `<main>'

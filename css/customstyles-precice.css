@@ -10,7 +10,7 @@ body {
   margin-top:-20px;
 }
 a.navbar-brand {
-    padding-top: 12px;
+    padding-top: 5px;
 }
 .navbar-brand-text {
     height: 28px;
@@ -33,28 +33,28 @@ a.navbar-brand {
 a:hover > .navbar-brand-icon:before{
     transform: rotate(180deg);
 }
-/* .nav styles both topnav and sidenav, so use .nav.navbar-nav */
-.nav.navbar-nav > li > a {
+/* .nav styles both topnav and sidenav, so use .navbar-nav */
+.navbar-nav > li > a {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
     font-weight: 500;
     margin-top: 11px;
 }
-.nav > li > a {
+.navbar-nav > li > a, .nav > li > a {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
 }
 /* rightmost icons */
-.nav > li > a.nav-external {
+.navbar-nav > li > a.nav-external {
     font-size: 24px;
     line-height: 20px;
     padding: 2px 0px;
     margin-top: 11px;
 }
 @media (max-width: 1200px) {
-    .nav > li > a.nav-external {
+    .navbar-nav > li > a.nav-external {
         float: left;
     }
 }
@@ -411,4 +411,13 @@ div.highlighter-rouge:hover .copy-code-btn {
     background-color: #28a745;
     color: white;
     border-color: #28a745;
+}
+
+pre {
+  overflow: auto;
+  max-width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }

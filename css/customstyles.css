@@ -289,7 +289,7 @@ li.dropdownActive a {
 }
 
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-dark .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
 }
@@ -422,11 +422,11 @@ ul#mysidebar {
 }
 /* end sidebar */
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-dark .navbar-nav > .active > a, .navbar-dark .navbar-nav > .active > a:hover, .navbar-dark .navbar-nav > .active > a:focus {
     border-radius:4px;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar-dark .navbar-nav>.open>a, .navbar-dark .navbar-nav>.open>a:focus, .navbar-dark .navbar-nav>.open>a:hover {
     border-radius: 4px;
 }
 
@@ -543,7 +543,7 @@ button.cursorNorm {
     cursor: default;
 }
 
-a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
+a.dropdown-toggle, .navbar-dark .navbar-nav > li > a  {
     margin-left: 10px;
 }
 
@@ -720,7 +720,7 @@ ol.series li {
 }
 
 /* not sure if using this ...*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-dark .navbar-collapse, .navbar-dark .navbar-form {
     border-color: #248ec2 !important;
 }
 
@@ -858,7 +858,7 @@ span.soft {
 }
 
 @media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-dark .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
 }

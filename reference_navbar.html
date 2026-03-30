@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content=" ">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>preCICE - The Coupling Library | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="preCICE - The Coupling Library" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/index.html" />
+<meta property="og:image" content="https://precice.org/images/icon.svg" />
+
+
+<!-- theme-toggle.js script -->
+<script src="/js/theme-toggle.js"></script>
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org">
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+
+<!-- Algolia InstantSearch -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/customstyles-precice.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<link rel="stylesheet" href="/css/bookcover.css">
+<link rel="stylesheet" href="/css/theme-precice.css">
+<link rel="stylesheet" href="/css/theme-main.css">
+
+<link rel="stylesheet" href="/css/landing-page.css">
+
+
+<!-- jQuery (needed by navgoco sidebar + jquery.cookie) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<!-- Bootstrap 5 JS (bundle includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" crossorigin="anonymous"></script>
+
+<!-- KaTeX (deferred) -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia + Moment -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+
+<!-- Local JS -->
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="precice-nav navbar fixed-top" id="preciceNav" aria-label="Main navigation">
+  <div class="precice-nav__inner">
+
+    <!-- ── Brand ──────────────────────────────────────────────────── -->
+    <a class="precice-nav__brand nav-brand" href="https://precice.org">
+      <img src="/images/icon_filled.svg"   alt="" aria-hidden="true" height="22">
+      <img src="/images/preCICE_text_28px.svg" alt="preCICE" height="22">
+    </a>
+
+    <!-- ── Desktop nav links (left cluster) ───────────────────────── -->
+    <ul class="precice-nav__links" role="list" aria-label="Site sections">
+      
+      
+
+      
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link"
+                 href="quickstart.html">Quickstart</a>
+            
+          </li>
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link"
+                 href="docs.html">Docs</a>
+            
+          </li>
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link"
+                 href="tutorials.html">Tutorials</a>
+            
+          </li>
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link"
+                 href="community.html">Community</a>
+            
+          </li>
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link" href="https://precice.discourse.group/c/news"
+                 target="_blank" rel="noopener">Blog</a>
+            
+          </li>
+        
+          
+          <li class="precice-nav__item">
+            
+              <a class="precice-nav__link"
+                 href="about.html">About</a>
+            
+          </li>
+        
+      
+    </ul>
+    <!-- /desktop nav links -->
+
+    <!-- ── Search (centre) ────────────────────────────────────────── -->
+    <div class="precice-nav__search" role="search">
+      <div id="search-demo-container">
+        <div id="search-input"></div>
+        <div id="search-results"></div>
+        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+      </div>
+    </div>
+
+    <!-- ── Right cluster ──────────────────────────────────────────── -->
+    <div class="precice-nav__right">
+
+      <!-- Theme toggle (existing toggleTheme() function in theme-toggle.js) -->
+      <button
+        id="theme-toggle"
+        class="precice-nav__icon-btn"
+        onclick="toggleTheme()"
+        aria-label="Switch to dark mode"
+        title="Toggle light / dark mode"
+      >
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <!-- Socials dropdown -->
+      <div class="dropdown">
+        <button
+          class="precice-nav__icon-btn dropdown-toggle"
+          type="button"
+          id="socialsDrop"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          aria-label="Community &amp; social links"
+          title="Find us online"
+        >
+          <i class="fas fa-earth-americas"></i>
+          <span class="precice-nav__socials-label">Socials</span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end precice-nav__socials-menu"
+            aria-labelledby="socialsDrop">
+
+          <li>
+            <a class="dropdown-item precice-nav__social-item"
+               href="https://precice.discourse.group" target="_blank" rel="noopener">
+              <span class="precice-nav__social-icon"><i class="fab fa-discourse"></i></span>
+              <span class="precice-nav__social-text">
+                <span class="precice-nav__social-label">Discourse</span>
+                <span class="precice-nav__social-sub">Community forum</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item precice-nav__social-item"
+               href="https://github.com/precice" target="_blank" rel="noopener">
+              <span class="precice-nav__social-icon"><i class="fab fa-github"></i></span>
+              <span class="precice-nav__social-text">
+                <span class="precice-nav__social-label">GitHub</span>
+                <span class="precice-nav__social-sub">Source &amp; issues</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item precice-nav__social-item"
+               href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener">
+              <span class="precice-nav__social-icon"><i class="fab fa-linkedin"></i></span>
+              <span class="precice-nav__social-text">
+                <span class="precice-nav__social-label">LinkedIn</span>
+                <span class="precice-nav__social-sub">Updates &amp; news</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item precice-nav__social-item"
+               href="https://fosstodon.org/@precice" target="_blank" rel="noopener" rel="me">
+              <span class="precice-nav__social-icon"><i class="fab fa-mastodon"></i></span>
+              <span class="precice-nav__social-text">
+                <span class="precice-nav__social-label">Mastodon</span>
+                <span class="precice-nav__social-sub">@precice@fosstodon</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item precice-nav__social-item"
+               href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener">
+              <span class="precice-nav__social-icon"><i class="fab fa-youtube"></i></span>
+              <span class="precice-nav__social-text">
+                <span class="precice-nav__social-label">YouTube</span>
+                <span class="precice-nav__social-sub">Videos &amp; talks</span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- /socials dropdown -->
+
+    </div>
+    <!-- /right cluster -->
+
+    <!-- ── Mobile hamburger (far right) ───────────────────────────── -->
+    <button
+      class="precice-nav__toggler"
+      id="mobileToggler"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+      aria-label="Open navigation menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div><!-- /.precice-nav__inner -->
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MOBILE MENU PANEL
+════════════════════════════════════════════════════════════════ -->
+<div class="precice-mobile-menu" id="mobileMenu"
+     role="dialog" aria-modal="true" aria-label="Mobile navigation">
+
+  <!-- Mobile search -->
+  <div class="precice-mobile-menu__search" role="search">
+    <div id="search-demo-container-mobile">
+      <i class="fas fa-search precice-mobile-menu__search-icon" aria-hidden="true"></i>
+      <input class="precice-mobile-menu__search-input" type="search"
+             placeholder="Search docs…" aria-label="Search" />
+    </div>
+  </div>
+
+  <!-- Nav links -->
+  <nav aria-label="Mobile site sections">
+    
+    
+
+    
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="quickstart.html">Quickstart</a>
+        
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="docs.html">Docs</a>
+        
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="tutorials.html">Tutorials</a>
+        
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="community.html">Community</a>
+        
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="https://precice.discourse.group/c/news"
+             target="_blank" rel="noopener">
+            Blog
+            <i class="fas fa-arrow-up-right-from-square precice-mobile-menu__ext-icon" aria-hidden="true"></i>
+          </a>
+        
+      
+        
+        
+          <a class="precice-mobile-menu__link" href="about.html">About</a>
+        
+      
+    
+  </nav>
+
+  <!-- Socials -->
+  <div class="precice-mobile-menu__section-label">Find us online</div>
+  <div class="precice-mobile-menu__socials">
+    <a class="precice-mobile-menu__social-btn" href="https://precice.discourse.group" target="_blank" rel="noopener">
+      <i class="fab fa-discourse"></i> Discourse
+    </a>
+    <a class="precice-mobile-menu__social-btn" href="https://github.com/precice" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a class="precice-mobile-menu__social-btn" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="precice-mobile-menu__social-btn" href="https://fosstodon.org/@precice" target="_blank" rel="noopener">
+      <i class="fab fa-mastodon"></i> Mastodon
+    </a>
+    <a class="precice-mobile-menu__social-btn" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+  </div>
+
+  <!-- Footer row: theme toggle -->
+  <div class="precice-mobile-menu__footer">
+    <button class="precice-mobile-menu__theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="theme-toggle-mobile-icon"></i>
+      <span id="theme-toggle-mobile-label">Dark mode</span>
+    </button>
+  </div>
+
+</div>
+<!-- /.precice-mobile-menu -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MOBILE MENU JAVASCRIPT
+     Minimal — only what Bootstrap can't do natively:
+       1. Hamburger ↔ ✕ animation
+       2. Body scroll lock
+       3. Close on outside click / Escape / resize
+════════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  var toggler    = document.getElementById('mobileToggler');
+  var panel      = document.getElementById('mobileMenu');
+  var nav        = document.getElementById('preciceNav');
+  var isOpen     = false;
+
+  // ── Scroll shadow on nav ──────────────────────────────────────────
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('precice-nav--scrolled', window.scrollY > 8);
+  }, { passive: true });
+
+  // ── Sync mobile theme icon with existing toggleTheme() ───────────
+  // The main theme-toggle.js already handles #theme-toggle (desktop btn).
+  // We just need to keep the mobile icon in sync.
+  function syncMobileThemeIcon() {
+    var theme   = document.documentElement.getAttribute('data-theme');
+    var icon    = document.getElementById('theme-toggle-mobile-icon');
+    var label   = document.getElementById('theme-toggle-mobile-label');
+    if (icon)  icon.className  = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+  }
+
+  // Run once on load, then patch toggleTheme() to also sync mobile icon
+  syncMobileThemeIcon();
+  var _origToggle = window.toggleTheme;
+  window.toggleTheme = function () {
+    _origToggle();
+    syncMobileThemeIcon();
+  };
+
+  // ── Open / close panel ───────────────────────────────────────────
+  function setMenu(open) {
+    isOpen = open;
+    toggler.setAttribute('aria-expanded', open ? 'true' : 'false');
+    panel.classList.toggle('precice-mobile-menu--open', open);
+    document.body.classList.toggle('precice-mobile-open', open);
+  }
+
+  toggler.addEventListener('click', function () { setMenu(!isOpen); });
+
+  document.addEventListener('click', function (e) {
+    if (isOpen && !panel.contains(e.target) && !toggler.contains(e.target)) {
+      setMenu(false);
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen) setMenu(false);
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768 && isOpen) setMenu(false);
+  });
+}());
+</script>
+		<!-- News banner -->
+		
+
+
+
+	</header>
+	<main>
+		<!-- Page Content -->
+		<div class="container hero-padding">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1 class="title no-anchor mb-3">
+  Welcome to
+  <a class="precice-nav__brand hero-brand" href="https://precice.org" tabindex="-1" aria-hidden="true">
+    <img src="/images/icon_filled.svg" alt="" aria-hidden="true" height="42">
+    <img src="/images/preCICE_text_28px.svg" alt="preCICE" height="42">
+  </a>
+</h1>
+      <h2 class="subtitle no-anchor mb-4">The coupling library for partitioned multi-physics simulations.</h2>
+      <div class="action-button-container d-flex flex-wrap gap-3 mb-5">
+        <span id="github-button">
+          <a href="https://github.com/precice/precice/" class="btn btn-st-secondary action-button" role="button">Star on GitHub &nbsp;<i class="fab fa-github"></i></a>
+        </span>
+        <span id="latest-release">
+          <a href="https://github.com/precice/precice/releases/tag/v3.3.1" class="btn btn-st-secondary action-button" role="button">Latest v3.3.1 &nbsp;<i class="fas fa-download"></i></a>
+        </span>
+        <a href="/quickstart.html" class="btn btn-st-primary action-button" role="button">Get started &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div class="hero-text-content">
+        <p class="lead-st">preCICE is an <strong>open-source coupling library and ecosystem</strong> for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.</p>
+        <p class="text-secondary-st">Partitioned means that <strong>preCICE couples existing programs/solvers</strong> capable of simulating a subpart of the complete physics involved in a simulation. This allows for the high flexibility that is needed to keep a decent time-to-solution for complex coupled problems.</p>
+        <p class="text-secondary-st mb-0">The software offers convenient methods for transient equation coupling, communication, time interpolation, and data mapping.</p>
+      </div>
+    </div>
+    <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+      <div class="hero-image-wrapper">
+        <img class="img-fluid" src="images/lead-image-precice.svg" alt="visualisation of how preCICE couples different solvers">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-st">
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="section-header-st">Prepared for the next generation of multi-physics simulations</h2>
+    </div>
+  </div>
+  <div class="row g-4">
+
+    <div class="col-md-3 col-sm-6 d-flex flex-column">
+      <div class="st-card flex-fill">
+        <div class="text-center mb-4">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-minimal.svg" alt="non-invasive integration" style="height:80px;">
+        </div>
+        <h3 class="st-card-title">Minimally invasive integration</h3>
+        <div class="st-card-body">
+          <ul class="usp-st"><li class="usp-st-li">Elegant library approach</li><li class="usp-st-li">High-level API in C++, C, Fortran, Python, Matlab</li></ul>
+          <a href="couple-your-code-overview.html" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex flex-column">
+      <div class="st-card flex-fill">
+        <div class="text-center mb-4">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-arbitrary.svg" alt="Coupling of programs" style="height:80px;">
+        </div>
+        <h3 class="st-card-title">Coupling of arbitrary many programs</h3>
+        <div class="st-card-body">
+          <ul class="usp-st"><li class="usp-st-li">Arbitrary combinations of strong and weak interactions</li><li class="usp-st-li">Arbitrary many solvers</li></ul>
+          <a href="configuration-coupling-multi.html" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex flex-column">
+      <div class="st-card flex-fill">
+        <div class="text-center mb-4">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-numerics.svg" alt="numerical methods" style="height:80px;">
+        </div>
+        <h3 class="st-card-title">State-of-the-art numerical methods</h3>
+        <div class="st-card-body">
+          <ul class="usp-st"><li class="usp-st-li">Robust quasi-Newton acceleration</li><li class="usp-st-li">Radial-basis function data mapping</li></ul>
+          <a href="fundamentals-literature-guide.html" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 d-flex flex-column">
+      <div class="st-card flex-fill">
+        <div class="text-center mb-4">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-scalability.svg" alt="scalability" style="height:80px;">
+        </div>
+        <h3 class="st-card-title">Scalability up to complete supercomputers</h3>
+        <div class="st-card-body">
+          <ul class="usp-st"><li class="usp-st-li">Pure peer-to-peer approach</li><li class="usp-st-li">Support of heterogeneous hardware (CPU/GPU)</li><li class="usp-st-li">Efficient also on a laptop</li></ul>
+          <a href="fundamentals-literature-guide.html#parallel-and-high-performance-computing" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="surface-sunken-st">
+  <div class="container section-st">
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <h2 class="section-header-st">How does it look like?</h2>
+        <p class="lead-st">In this tutorial, we couple the CFD code OpenFOAM with a C++ rigid body solver for fluid-structure interaction, using a serial-explicit coupling, as defined in the <a href="configuration-overview.html">preCICE configuration file</a>. OpenFOAM loads a ready-to-use <a href="adapter-openfoam-overview.html">adapter</a>, while the C++ code uses the <a href="couple-your-code-api.html">preCICE API</a>. OpenFOAM starts and waits for the other code. After they both start, they find each other and perform a black-box coupled simulation.</p>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="terminal-container shadow-lg">
+          <div class="terminal-header-st">
+            <div class="terminal-dots"><span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span></div>
+            <div class="terminal-tab">simulation_tutorial.sh</div>
+          </div>
+          <div class="terminal-body-st">
+            <div class="d-none d-md-block">
+              <script id="asciicast-RqGhiiS8jf2fKTaXgiNn73B1G" src="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G.js" data-size="small" async></script>
+            </div>
+            <div class="d-md-none mb-2">
+              <a href="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G" target="_blank">
+                <img class="img-fluid mx-auto d-block" src="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G.svg" alt="code animation">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap gap-3 justify-content-center">
+        <a href="community-channels.html" class="btn btn-st-secondary">Follow preCICE &nbsp;<i class="fas fa-chevron-right"></i></a>
+        <a href="https://precice.discourse.group/c/what-is/9" class="btn btn-st-secondary">Is preCICE for me? &nbsp;<i class="fas fa-chevron-right"></i></a>
+        <a href="quickstart.html" class="btn btn-st-primary">Run this tutorial yourself &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-st">
+  <div class="row mb-5">
+    <div class="col-lg-8">
+      <h2 class="section-header-st">Ready-to-use with your favourite open-source solver</h2>
+      <p class="text-secondary-st">Several free and proprietary codes are currently coupled with preCICE. Pick one of our official adapters below or check out our <a href="community-projects.html">community projects</a>.</p>
+    </div>
+  </div>
+  <div class="row g-4 align-items-stretch">
+    <div class="col-md-2 col-4">
+      <a class="st-adapter-link" href="adapter-openfoam-overview.html">
+        <div class="st-card-mini h-100 text-center">
+          <img class="img-fluid mx-auto adapter-logo" src="images/logo/logo-openfoam.png" alt="openFOAM logo">
+          <p class="mt-3 mb-0 fw-bold">OpenFOAM</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-2 col-4">
+      <a class="st-adapter-link" href="adapter-calculix-overview.html">
+        <div class="st-card-mini h-100 text-center">
+          <img class="img-fluid mx-auto adapter-logo" src="images/logo/logo-calculix.png" alt="CalculiX logo">
+          <p class="mt-3 mb-0 fw-bold">CalculiX</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-2 col-4">
+      <a class="st-adapter-link" href="adapter-fenics.html">
+        <div class="st-card-mini h-100 text-center">
+          <img class="img-fluid mx-auto adapter-logo" src="images/logo/logo-fenics.png" alt="FEniCS logo">
+          <p class="mt-3 mb-0 fw-bold">FEniCS</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-2 col-4">
+      <a class="st-adapter-link" href="adapter-dealii-overview.html">
+        <div class="st-card-mini h-100 text-center">
+          <img class="img-fluid mx-auto adapter-logo" src="images/logo/logo-dealii.png" alt="deal.II logo">
+          <p class="mt-3 mb-0 fw-bold">deal.II</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-2 col-4">
+      <a class="st-adapter-link" href="adapter-nutils.html">
+        <div class="st-card-mini h-100 text-center">
+          <img class="img-fluid mx-auto adapter-logo" src="images/logo/logo-nutils.png" alt="Nutils logo">
+          <p class="mt-3 mb-0 fw-bold">Nutils</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
+      <a class="st-adapter-link text-center" href="adapters-overview.html">
+        <div class="all-adapters-circle mb-2">
+          <i class="fas fa-chevron-right fa-2x"></i>
+        </div>
+        <p class="fw-bold">All adapters</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="surface-dark-st text-light">
+  <div class="container section-st">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="section-header-st text-white">What our community is saying</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="st-card-dark h-100">
+          <div class="card-body">
+            <p class="quote-st"><a href="community-projects.html#evaluation-of-heart-balve-biomechanics" class="text-white text-decoration-none"><i class="fas fa-quote-left op-50"></i> We are using preCICE as it can handle numerical simulations of large sizes with ease as opposed to previous in-house couplers. <i class="fas fa-quote-right op-50"></i></a></p>
+            <div class="d-flex align-items-center mt-4">
+              <img class="testimonial-img-st me-3" src="images/testimonial_kyle_square.jpg" alt="Kyle Davis">
+              <div>
+                <p class="mb-0 fw-bold">— Kyle Davis</p>
+                <p class="mb-0 small op-70">University of the Free State, South Africa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="st-card-dark h-100">
+          <div class="card-body">
+            <p class="quote-st"><a href="community-projects.html#fluid-structure-interaction-on-flapping-wings" class="text-white text-decoration-none"><i class="fas fa-quote-left op-50"></i> The large number of coupling functionalities in preCICE gives the user the opportunity to build advanced and scalable simulations with ease. <i class="fas fa-quote-right op-50"></i></a></p>
+            <div class="d-flex align-items-center mt-4">
+              <img class="testimonial-img-st me-3" src="images/testimonial_derek_square.jpg" alt="Derek Risseeuw">
+              <div>
+                <p class="mb-0 fw-bold">— Derek Risseeuw</p>
+                <p class="mb-0 small op-70">Faculty of Aerospace Engineering, TU Delft</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="st-card-dark h-100">
+          <div class="card-body">
+            <p class="quote-st"><a href="community-projects.html#hybrid-simulation-methods-for-wind-modelling-in-urban-areas" class="text-white text-decoration-none"><i class="fas fa-quote-left op-50"></i> With preCICE, we could realize an efficient CPU-GPU coupling of our in-house lattice Boltzmann solver and OpenFOAM. <i class="fas fa-quote-right op-50"></i></a></p>
+            <div class="d-flex align-items-center mt-4">
+              <img class="testimonial-img-st me-3" src="images/testimonial_manchester_square.jpg" alt="Marta Camps Santasmasas">
+              <div>
+                <p class="mb-0 fw-bold">— Marta Camps Santasmasas</p>
+                <p class="mb-0 small op-70">University of Manchester, UK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <a href="community-projects.html" class="btn btn-st-primary">Explore all community stories &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-st">
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="section-header-st">Academic at heart, 100% free software</h2>
+    </div>
+  </div>
+  <div class="row mb-5 g-5">
+    <div class="col-md-6">
+      <div class="pe-lg-5">
+        <p class="lead-st">preCICE has been developed by three generations of doctoral candidates from the <a href="https://www.cs.cit.tum.de/en/sccs/home/">Chair of Scientific Computing</a> at the <strong>Technical University of Munich</strong> and from the <a href="https://www.ipvs.uni-stuttgart.de/">Institute for Parallel and Distributed Systems</a> at the <strong>University of Stuttgart</strong>.</p>
+        <p class="text-secondary-st">We develop everything openly on GitHub, the preCICE library is licensed under LGPLv3, and every other component is developed under compatible free software licenses. <a href="fundamentals-license.html">More information.</a></p>
+        <p class="text-secondary-st">You can <strong>cite the preCICE library</strong> using the following paper. Please also consider citing the adapters you use, as well as the <a href="installation-distribution.html">preCICE Distribution</a> for <strong>reproducibility</strong>. You can find the respective references in our <a href="fundamentals-literature-guide.html">literature guide</a>.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+  <div class="uni-link-group">
+
+  <div class="uni-logo-row">
+    <a href="https://www.cs.cit.tum.de/en/sccs/home/" class="uni-link">
+      <img class="uni-logo-st" src="images/logo/logo_tum_400px.png" alt="TUM logo">
+    </a>
+    <a href="https://www.ipvs.uni-stuttgart.de/" class="uni-link">
+      <img class="uni-logo-st" src="images/logo/logo_stuttgart_400px.png" alt="Uni Stuttgart logo">
+    </a>
+  </div>
+
+  <a class="github-card-st" href="https://github.com/precice/precice">
+    <i class="fab fa-github"></i>
+    <span>preCICE on GitHub</span>
+  </a>
+
+</div>
+</div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-3 d-none d-md-block text-center">
+      <a class="book-container-st" href="https://doi.org/10.12688/openreseurope.14445.2" target="_blank" rel="noreferrer noopener">
+        <div class="book-shadow">
+          <img class="img-fluid paper-thumb" alt="preCICE reference paper" src="images/paper-v2-thumbnail.jpg">
+        </div>
+      </a>
+    </div>
+    <div class="col-md-9">
+      <div class="st-card-featured">
+        <div class="st-card-label">Reference Paper</div>
+        <h3 class="mb-3">preCICE v2: A sustainable and user-friendly coupling library</h3>
+        <p class="mb-4"><em>Gerasimos Chourdakis, Kyle Davis, Benjamin Rodenberg, Miriam Schulte, Frédéric Simonis, Benjamin Uekermann et al.</em>, <strong>2022</strong>. In Open Research Europe, 2:51.</p>
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <a href="https://doi.org/10.12688/openreseurope.14445.2" class="st-link-bold">Publisher's Site</a>
+          <a href="assets/precice-v2.bib" class="btn btn-st-secondary btn-sm">Download BibTeX &nbsp;<i class="fas fa-download"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17974677460269868025,12004404035922881061" class="btn btn-st-secondary">Citations (187)</a>
+        <a href="https://scholar.google.com/scholar?cites=5053469347483527186&as_sdt=2005&sciodt=0,5&hl=en" class="btn btn-st-secondary">preCICE v1 citations</a>
+        <a href="fundamentals-literature-guide.html" class="btn btn-st-primary">Literature guide &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="surface-sunken-st">
+  <div class="container section-st">
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <h2 class="section-header-st">Tried and tested by a global community</h2>
+        <p class="text-secondary-st">Through the <strong>community-driven development</strong> approach, preCICE has become one of the leading coupling libraries for multi-physics simulations both in <strong>academia and industry</strong>. The variety of fields ranges from aerodynamics to nuclear fusion and biomechanics.</p>
+      </div>
+    </div>
+
+
+
+
+
+<!-- Desktop grid -->
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.oden.utexas.edu/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ices.png" alt="Oden Institute, USA">
+      </div>
+      <p class="institution">Oden Institute</p>
+      <p class="country">USA</p>
+    </a>
+    
+    <a href="https://www.cira.it/en" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-cira.jpg" alt="CIRA, Italy">
+      </div>
+      <p class="institution">CIRA</p>
+      <p class="country">Italy</p>
+    </a>
+    
+    <a href="https://www.mb.uni-siegen.de/lfst/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-siegen.png" alt="Fluid Mechanics, Germany">
+      </div>
+      <p class="institution">Fluid Mechanics</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.mib.uni-stuttgart.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-stuttgart.png" alt="Applied Mechanics, Germany">
+      </div>
+      <p class="institution">Applied Mechanics</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+    
+    <a href="https://www.sc.informatik.tu-darmstadt.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-darmstadt.png" alt="Scientific Computing, Germany">
+      </div>
+      <p class="institution">Scientific Computing</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.ufs.ac.za/health/departments-and-divisions/cardiothoracic-surgery-home" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ufs.png" alt="University of the Free State, South Africa">
+      </div>
+      <p class="institution">University of the Free State</p>
+      <p class="country">South Africa</p>
+    </a>
+    
+    <a href="https://www.a-star.edu.sg/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-astar.png" alt="A*STAR, Singapore">
+      </div>
+      <p class="institution">A*STAR</p>
+      <p class="country">Singapore</p>
+    </a>
+    
+    <a href="https://www.nrg.eu/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-nrg.png" alt="NRG, Netherlands">
+      </div>
+      <p class="institution">NRG</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.lrg.tum.de/en/ht/home/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-tum.png" alt="Helicopter Technology, Germany">
+      </div>
+      <p class="institution">Helicopter Technology</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.fnb.tu-darmstadt.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-darmstadt.png" alt="FNB, Germany">
+      </div>
+      <p class="institution">FNB</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.iws.uni-stuttgart.de" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-stuttgart.png" alt="IWS, Germany">
+      </div>
+      <p class="institution">IWS</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.tudelft.nl/en/ae/organisation/departments/flow-physics-and-technology/wind-energy" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-delft.png" alt="Wind Energy, Netherlands">
+      </div>
+      <p class="institution">Wind Energy</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+  
+    
+    <a href="https://www.fast.kit.edu/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-kit.png" alt="FAST, Germany">
+      </div>
+      <p class="institution">FAST</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.mech.kuleuven.be/en/mod" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-leuven.png" alt="Noise & Vibration, Belgium">
+      </div>
+      <p class="institution">Noise & Vibration</p>
+      <p class="country">Belgium</p>
+    </a>
+    
+    <a href="https://www.mace.manchester.ac.uk/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-manchester.png" alt="Aerodynamics, United Kingdom">
+      </div>
+      <p class="institution">Aerodynamics</p>
+      <p class="country">United Kingdom</p>
+    </a>
+    
+    <a href="https://www.mtu.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-mtu.png" alt="MTU Aero Engines, Germany">
+      </div>
+      <p class="institution">MTU Aero Engines</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.mb.uni-siegen.de/sts/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-siegen.png" alt="STS, Germany">
+      </div>
+      <p class="institution">STS</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.tudelft.nl/en/ae/organisation/departments/aerodynamics-wind-energy-flight-performance-and-propulsion/aerodynamics/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-delft.png" alt="Aerodynamics, Netherlands">
+      </div>
+      <p class="institution">Aerodynamics</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+    <a href="http://www.cttc.upc.edu/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-upc.png" alt="Heat and Mass Transfer TC, Spain">
+      </div>
+      <p class="institution">Heat and Mass Transfer TC</p>
+      <p class="country">Spain</p>
+    </a>
+    
+    <a href="https://www.tu-braunschweig.de/ifl" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-braunschweig.jpg" alt="IFL, Germany">
+      </div>
+      <p class="institution">IFL</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+    
+    <a href="https://www.dhcae-tools.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-dhcae.png" alt="DHCAE, Germany">
+      </div>
+      <p class="institution">DHCAE</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.eurocfd.com/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-eurocfd.png" alt="EuroCFD, France">
+      </div>
+      <p class="institution">EuroCFD</p>
+      <p class="country">France</p>
+    </a>
+    
+    <a href="https://www.grs.de/en" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-grs.jpeg" alt="Global Research for Safety, Germany">
+      </div>
+      <p class="institution">Global Research for Safety</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.ipp.mpg.de/en" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ipp.jpeg" alt="MPI-IPP, Germany">
+      </div>
+      <p class="institution">MPI-IPP</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.cfd-fsi-xiao.org/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-strathclyde.png" alt="CFD & FSI, United Kingdom">
+      </div>
+      <p class="institution">CFD & FSI</p>
+      <p class="country">United Kingdom</p>
+    </a>
+    
+    <a href="http://www.bitron.net/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-bitron.jpeg" alt="Bitron, Italy">
+      </div>
+      <p class="institution">Bitron</p>
+      <p class="country">Italy</p>
+    </a>
+    
+    <a href="https://www.ait.ac.at/en/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ait.png" alt="AIT, Austria">
+      </div>
+      <p class="institution">AIT</p>
+      <p class="country">Austria</p>
+    </a>
+    
+    <a href="https://wwwfr.uni.lu/recherche/fstm/doe" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-lux.png" alt="Fluid Mechanics, Luxembourg">
+      </div>
+      <p class="institution">Fluid Mechanics</p>
+      <p class="country">Luxembourg</p>
+    </a>
+    
+  
+    
+    <a href="https://eng.fesb.unist.hr/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-split.png" alt="University of Split, Croatia">
+      </div>
+      <p class="institution">University of Split</p>
+      <p class="country">Croatia</p>
+    </a>
+    
+    <a href="http://home.iitk.ac.in/~ashoke/people.php" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-iit.png" alt="IIT, India">
+      </div>
+      <p class="institution">IIT</p>
+      <p class="country">India</p>
+    </a>
+    
+    <a href="https://www.reactor.sci.kth.se/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-kth.png" alt="Nuclear Engineering, Sweden">
+      </div>
+      <p class="institution">Nuclear Engineering</p>
+      <p class="country">Sweden</p>
+    </a>
+    
+    <a href="https://www.iag.uni-stuttgart.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-stuttgart.png" alt="IAG, Germany">
+      </div>
+      <p class="institution">IAG</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://pprime.fr/en/institute/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-pprime.png" alt="Pprime Institute, France">
+      </div>
+      <p class="institution">Pprime Institute</p>
+      <p class="country">France</p>
+    </a>
+    
+    <a href="https://www.corvidtec.com/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-corvid.png" alt="Corvid Technologies, USA">
+      </div>
+      <p class="institution">Corvid Technologies</p>
+      <p class="country">USA</p>
+    </a>
+    
+    <a href="https://researchmap.jp/ytakahashi0109?lang=en" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-hokkaido.png" alt="Space Transportation System Laboratory, Japan">
+      </div>
+      <p class="institution">Space Transportation System Laboratory</p>
+      <p class="country">Japan</p>
+    </a>
+    
+    <a href="http://acoustics.ae.illinois.edu/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-illinois.png" alt="Aeroacoustics and Flow Physics, USA">
+      </div>
+      <p class="institution">Aeroacoustics and Flow Physics</p>
+      <p class="country">USA</p>
+    </a>
+    
+  
+    
+    <a href="http://www.ata-e.com/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ata.jpg" alt="ATA Engineering, USA">
+      </div>
+      <p class="institution">ATA Engineering</p>
+      <p class="country">USA</p>
+    </a>
+    
+    <a href="https://www.kaeri.re.kr/eng/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-kaeri.png" alt="Korea Atomic Energy Research Institute, South Korea">
+      </div>
+      <p class="institution">Korea Atomic Energy Research Institute</p>
+      <p class="country">South Korea</p>
+    </a>
+    
+    <a href="https://www.tue.nl/en/research/research-groups/energy-technology/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-tue.png" alt="Energy Technology, Netherlands">
+      </div>
+      <p class="institution">Energy Technology</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+    <a href="http://emps.exeter.ac.uk/engineering/staff/grtabor" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-exeter.png" alt="Computational Fluid Dynamics, United Kingdom">
+      </div>
+      <p class="institution">Computational Fluid Dynamics</p>
+      <p class="country">United Kingdom</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://people.ucd.ie/philip.cardiff" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ucl.png" alt="Mechanical and Materials Engineering, Ireland">
+      </div>
+      <p class="institution">Mechanical and Materials Engineering</p>
+      <p class="country">Ireland</p>
+    </a>
+    
+    <a href="https://www.hsu-hh.de/hpc/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-hsu.svg" alt="High Performance Computing, Germany">
+      </div>
+      <p class="institution">High Performance Computing</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.awi.de/en/about-us/organisation/staff/single-view/angelika-humbert.html" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-awi.svg" alt="Alfred Wegener Institute, Germany">
+      </div>
+      <p class="institution">Alfred Wegener Institute</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.xlusysu.org/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-sunyatsen.png" alt="Atmospheric Chemistry and Climate Modeling, China">
+      </div>
+      <p class="institution">Atmospheric Chemistry and Climate Modeling</p>
+      <p class="country">China</p>
+    </a>
+    
+  
+    
+    <a href="https://www.hsu-hh.de/pfs/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-hsu.svg" alt="Fluid Mechanics, Germany">
+      </div>
+      <p class="institution">Fluid Mechanics</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://ariane.group/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ariane.png" alt="Propellant Management, Germany">
+      </div>
+      <p class="institution">Propellant Management</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.psi.ch/de/research/energie-und-klima" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-eth-psi.png" alt="Paul Scherrer Institut, Switzerland">
+      </div>
+      <p class="institution">Paul Scherrer Institut</p>
+      <p class="country">Switzerland</p>
+    </a>
+    
+    <a href="https://www.mbd.rwth-aachen.de/go/id/qamyz" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-rwth-mbd.svg" alt="Model-Based Development, Germany">
+      </div>
+      <p class="institution">Model-Based Development</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://cris.bgu.ac.il/en/persons/roiy-sayag" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-bgu.png" alt="Ben-Gurion University, Israel">
+      </div>
+      <p class="institution">Ben-Gurion University</p>
+      <p class="country">Israel</p>
+    </a>
+    
+    <a href="https://www.ikz-berlin.de" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ikz.svg" alt="Leibniz Institute for Crystal Growth, Germany">
+      </div>
+      <p class="institution">Leibniz Institute for Crystal Growth</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="http://velos0.ltt.mech.ntua.gr/research/res.html" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ntua.jpeg" alt="Parallel CFD & Optimization Unit, Greece">
+      </div>
+      <p class="institution">Parallel CFD & Optimization Unit</p>
+      <p class="country">Greece</p>
+    </a>
+    
+    <a href="https://www.leonardo.com/en/innovation-technology/leonardo-labs/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-leonardo.svg" alt="Leonardo Labs, Italy">
+      </div>
+      <p class="institution">Leonardo Labs</p>
+      <p class="country">Italy</p>
+    </a>
+    
+  
+    
+    <a href="https://www.hsu-hh.de/statdyn/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-hsu.svg" alt="Structural Analysis, Germany">
+      </div>
+      <p class="institution">Structural Analysis</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.ifpenergiesnouvelles.com/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ifpen.jpg" alt="IFPEN, France">
+      </div>
+      <p class="institution">IFPEN</p>
+      <p class="country">France</p>
+    </a>
+    
+    <a href="https://ex-mente.com/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ex-mente.png" alt="Ex Mente Technologies, South Africa">
+      </div>
+      <p class="institution">Ex Mente Technologies</p>
+      <p class="country">South Africa</p>
+    </a>
+    
+    <a href="https://mintek.co.za/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-mintek.jpeg" alt="Mintek, South Africa">
+      </div>
+      <p class="institution">Mintek</p>
+      <p class="country">South Africa</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.tudelft.nl/me/over/afdelingen/biomechanical-engineering/research/cardiovascular-biomechanics" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-delft.png" alt="CardioVascular Biomechanics, Netherlands">
+      </div>
+      <p class="institution">CardioVascular Biomechanics</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+    <a href="https://events.rdmobile.com/Sessions/Details/2422124" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-llnl.png" alt="Lawrence Livermore National Laboratory, USA">
+      </div>
+      <p class="institution">Lawrence Livermore National Laboratory</p>
+      <p class="country">USA</p>
+    </a>
+    
+    <a href="https://www.ornl.gov/project/fermi" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ornl.svg" alt="Fusion and Fission Energy, USA">
+      </div>
+      <p class="institution">Fusion and Fission Energy</p>
+      <p class="country">USA</p>
+    </a>
+    
+    <a href="https://www.gmlab.ac.cn/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-gzhy.png" alt="Marine Science and Engineering, China">
+      </div>
+      <p class="institution">Marine Science and Engineering</p>
+      <p class="country">China</p>
+    </a>
+    
+  
+    
+    <a href="https://researchportal.hw.ac.uk/en/organisations/institute-for-geoenergy-engineering" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-hwu.png" alt="GeoEnergy Engineering, United Kingdom">
+      </div>
+      <p class="institution">GeoEnergy Engineering</p>
+      <p class="country">United Kingdom</p>
+    </a>
+    
+    <a href="https://www.ndorms.ox.ac.uk/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-ndorms.jpeg" alt="Medical Sciences Division, United Kingdom">
+      </div>
+      <p class="institution">Medical Sciences Division</p>
+      <p class="country">United Kingdom</p>
+    </a>
+    
+    <a href="https://www.cem.tu-darmstadt.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-darmstadt.png" alt="Computational Electromagnetics, Germany">
+      </div>
+      <p class="institution">Computational Electromagnetics</p>
+      <p class="country">Germany</p>
+    </a>
+    
+    <a href="https://www.isd.uni-stuttgart.de/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-stuttgart.png" alt="Structural Mechanics and Dynamics in Aerospace Engineering, Germany">
+      </div>
+      <p class="institution">Structural Mechanics and Dynamics in Aerospace Engineering</p>
+      <p class="country">Germany</p>
+    </a>
+    
+  
+</div>
+
+<div class="logo-grid-row">
+  
+    
+    <a href="https://www.aero.polimi.it/en/research-labs/frame-lab-fixed-and-rotary-wing-aircraft-multidisciplinary-eng" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-pol-milano.png" alt="Fixed and Rotary-wing Aircraft Multidisciplinary Eng., Italy">
+      </div>
+      <p class="institution">Fixed and Rotary-wing Aircraft Multidisciplinary Eng.</p>
+      <p class="country">Italy</p>
+    </a>
+    
+    <a href="https://www.aero.polimi.it/en/research-labs/ral-rotorcraft-aerodynamic-lab" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-pol-milano.png" alt="Rotorcraft Aerodynamic, Italy">
+      </div>
+      <p class="institution">Rotorcraft Aerodynamic</p>
+      <p class="country">Italy</p>
+    </a>
+    
+    <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/numerical-analysis/" class="st-logo-item no-icon">
+      <div class="logo-holder">
+        <img src="images/logo/logo-delft.png" alt="Numerical Analysis, Netherlands">
+      </div>
+      <p class="institution">Numerical Analysis</p>
+      <p class="country">Netherlands</p>
+    </a>
+    
+  
+</div>
+
+
+<div class="lw-wrap">
+
+  <!-- Row 1 LTR -->
+  <div class="lw-track-outer">
+    <div class="lw-track ltr ready">
+
+      <a href="https://www.oden.utexas.edu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-ices.png" alt="Oden Institute"></div>
+        <span class="carousel-name">Oden Institute</span>
+        <span class="carousel-country">USA</span>
+      </a>
+
+      <a href="https://www.cira.it/en" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-cira.jpg" alt="CIRA"></div>
+        <span class="carousel-name">CIRA</span>
+        <span class="carousel-country">Italy</span>
+      </a>
+
+      <a href="https://www.mb.uni-siegen.de/lfst/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-siegen.png" alt="Fluid Mechanics"></div>
+        <span class="carousel-name">Fluid Mechanics</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.mib.uni-stuttgart.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-stuttgart.png" alt="Applied Mechanics"></div>
+        <span class="carousel-name">Applied Mechanics</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.sc.informatik.tu-darmstadt.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-darmstadt.png" alt="Scientific Computing"></div>
+        <span class="carousel-name">Scientific Computing</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <!-- Duplicate -->
+      <a href="https://www.oden.utexas.edu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-ices.png" alt="Oden Institute"></div>
+        <span class="carousel-name">Oden Institute</span>
+        <span class="carousel-country">USA</span>
+      </a>
+
+      <a href="https://www.cira.it/en" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-cira.jpg" alt="CIRA"></div>
+        <span class="carousel-name">CIRA</span>
+        <span class="carousel-country">Italy</span>
+      </a>
+
+      <a href="https://www.mb.uni-siegen.de/lfst/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-siegen.png" alt="Fluid Mechanics"></div>
+        <span class="carousel-name">Fluid Mechanics</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.mib.uni-stuttgart.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-stuttgart.png" alt="Applied Mechanics"></div>
+        <span class="carousel-name">Applied Mechanics</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.sc.informatik.tu-darmstadt.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-darmstadt.png" alt="Scientific Computing"></div>
+        <span class="carousel-name">Scientific Computing</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Row 2 RTL -->
+  <div class="lw-track-outer">
+    <div class="lw-track rtl ready">
+
+      <a href="https://www.ufs.ac.za/health/departments-and-divisions/cardiothoracic-surgery-home" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-ufs.png" alt="University of the Free State"></div>
+        <span class="carousel-name">University of the Free State</span>
+        <span class="carousel-country">South Africa</span>
+      </a>
+
+      <a href="https://www.a-star.edu.sg/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-astar.png" alt="A*STAR"></div>
+        <span class="carousel-name">A*STAR</span>
+        <span class="carousel-country">Singapore</span>
+      </a>
+
+      <a href="https://www.nrg.eu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-nrg.png" alt="NRG"></div>
+        <span class="carousel-name">NRG</span>
+        <span class="carousel-country">Netherlands</span>
+      </a>
+
+      <a href="https://www.lrg.tum.de/en/ht/home/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-tum.png" alt="Helicopter Technology"></div>
+        <span class="carousel-name">Helicopter Technology</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.fnb.tu-darmstadt.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-darmstadt.png" alt="FNB"></div>
+        <span class="carousel-name">FNB</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <!-- Duplicate -->
+      <a href="https://www.ufs.ac.za/health/departments-and-divisions/cardiothoracic-surgery-home" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-ufs.png" alt="University of the Free State"></div>
+        <span class="carousel-name">University of the Free State</span>
+        <span class="carousel-country">South Africa</span>
+      </a>
+
+      <a href="https://www.a-star.edu.sg/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-astar.png" alt="A*STAR"></div>
+        <span class="carousel-name">A*STAR</span>
+        <span class="carousel-country">Singapore</span>
+      </a>
+
+      <a href="https://www.nrg.eu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-nrg.png" alt="NRG"></div>
+        <span class="carousel-name">NRG</span>
+        <span class="carousel-country">Netherlands</span>
+      </a>
+
+      <a href="https://www.lrg.tum.de/en/ht/home/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-tum.png" alt="Helicopter Technology"></div>
+        <span class="carousel-name">Helicopter Technology</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.fnb.tu-darmstadt.de/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-darmstadt.png" alt="FNB"></div>
+        <span class="carousel-name">FNB</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Row 3 LTR -->
+  <div class="lw-track-outer">
+    <div class="lw-track ltr ready">
+
+      <a href="https://www.iws.uni-stuttgart.de" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-stuttgart.png" alt="IWS"></div>
+        <span class="carousel-name">IWS</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.tudelft.nl/en/ae/organisation/departments/flow-physics-and-technology/wind-energy" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-delft.png" alt="Wind Energy"></div>
+        <span class="carousel-name">Wind Energy</span>
+        <span class="carousel-country">Netherlands</span>
+      </a>
+
+      <a href="https://www.fast.kit.edu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-kit.png" alt="FAST"></div>
+        <span class="carousel-name">FAST</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.mech.kuleuven.be/en/mod" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-leuven.png" alt="Noise & Vibration"></div>
+        <span class="carousel-name">Noise & Vibration</span>
+        <span class="carousel-country">Belgium</span>
+      </a>
+
+      <a href="https://www.mace.manchester.ac.uk/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-manchester.png" alt="Aerodynamics"></div>
+        <span class="carousel-name">Aerodynamics</span>
+        <span class="carousel-country">United Kingdom</span>
+      </a>
+
+      <!-- Duplicate -->
+      <a href="https://www.iws.uni-stuttgart.de" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-stuttgart.png" alt="IWS"></div>
+        <span class="carousel-name">IWS</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.tudelft.nl/en/ae/organisation/departments/flow-physics-and-technology/wind-energy" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-delft.png" alt="Wind Energy"></div>
+        <span class="carousel-name">Wind Energy</span>
+        <span class="carousel-country">Netherlands</span>
+      </a>
+
+      <a href="https://www.fast.kit.edu/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-kit.png" alt="FAST"></div>
+        <span class="carousel-name">FAST</span>
+        <span class="carousel-country">Germany</span>
+      </a>
+
+      <a href="https://www.mech.kuleuven.be/en/mod" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-leuven.png" alt="Noise & Vibration"></div>
+        <span class="carousel-name">Noise & Vibration</span>
+        <span class="carousel-country">Belgium</span>
+      </a>
+
+      <a href="https://www.mace.manchester.ac.uk/" class="lw-card no-icon">
+        <div class="carousel-logo-holder"><img src="images/logo/logo-manchester.png" alt="Aerodynamics"></div>
+        <span class="carousel-name">Aerodynamics</span>
+        <span class="carousel-country">United Kingdom</span>
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <a href="community.html" class="btn btn-st-primary">Explore preCICE community &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-st">
+  <div class="row mb-5">
+    <div class="col-12 text-center">
+      <h2 class="section-header-st">Join the community!</h2>
+      <p class="lead-st mx-auto" style="max-width: 700px;">We develop everything in the open, with continuous feedback by a vivid community. Be part of it:</p>
+    </div>
+  </div>
+  <div class="row g-5">
+    <div class="col-md-7"><ul class="community-list-st">
+  <li>
+    <div class="c-icon"><i class="fas fa-comments"></i></div>
+    <div><strong>Ask for help and help others</strong> in the <a href="https://precice.discourse.group/">preCICE forum</a> and register to receive news.</div>
+  </li>
+  <li>
+    <div class="c-icon"><i class="fas fa-edit"></i></div>
+    <div>Directly <strong>edit the documentation</strong>. We review and help - nothing can go wrong.</div>
+  </li>
+  <li>
+    <div class="c-icon"><i class="fas fa-exclamation-circle"></i></div>
+    <div>Report issues on <a href="https://github.com/precice/">GitHub</a> and help us solve them for everyone.</div>
+  </li>
+  <li>
+    <div class="c-icon"><i class="fas fa-code-branch"></i></div>
+    <div><a href="community-contribute-to-precice.html">Contribute</a> code and simulation examples - we help you with guidelines, tools, and reviews.</div>
+  </li>
+  <li>
+    <div class="c-icon"><i class="fas fa-users"></i></div>
+    <div><strong>Meet the community</strong> in one of the <a href="community.html">preCICE workshops and conference sessions</a>.</div>
+  </li>
+  <li>
+    <div class="c-icon"><i class="fas fa-envelope"></i></div>
+    <div>
+      Subscribe to our <b>quarterly newsletter</b> including:
+      <ul>
+        <li>New publications</li>
+        <li>New features</li>
+        <li>New adapters, bindings, tools, tutorials, and more</li>
+        <li>Upcoming events and news from the community</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+    </div>
+    <div class="col-md-5">
+      <div class="st-card newsletter-card">
+        <h3 class="h5 fw-bold mb-3">The quarterly preCICE newsletter</h3>
+        <p class="small text-secondary-st mb-4">New publications, features, adapters, tools, and upcoming events.</p>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="surface-support-st">
+  <div class="container section-st">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-7">
+        <h2 class="section-header-st">You support preCICE – preCICE supports you</h2>
+        <p class="lead-st">As the developers of preCICE, we enjoy supporting our academic and industry users, but due to the growing demand, we are not able to service all support requests any more. We are introducing <strong>preCICE support</strong> as a way to contribute to sustainable open-source software development and to ensure preCICE is developed and maintained in the future. Supporting preCICE comes with several benefits:</p>
+        <ul class="support-list-st">
+          <li><i class="fas fa-check-circle me-2 text-primary"></i> <div><strong>Increased success rate</strong> for your research proposal (include preCICE as a partner, software provider, or sub-contractor)</div></li>
+          <li><i class="fas fa-check-circle me-2 text-primary"></i> <div><strong>Priority support</strong> and direct access to developers</div></li>
+          <li><i class="fas fa-check-circle me-2 text-primary"></i> <div>Private, on-site support and bespoke training</div></li>
+          <li class="support-note">We offer different levels of support for industry and academia.</p>
+        </ul>
+        <a href="community-support-precice.html" class="btn btn-st-primary btn-lg mt-4">Support preCICE — see options</a>
+      </div>
+      <div class="col-md-5 text-center">
+        <div class="support-badge-wrapper">
+          <img class="img-fluid precice-support-st" src="images/precice-support.svg" alt="precice support program logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="surface-sunken-st">
+  <div class="container section-st">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="section-header-st">Frequently asked questions (FAQ)</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="st-card h-100">
+          <h3 class="h6 fw-bold mb-3 text-primary">Can preCICE be used for volume coupling?</h3>
+          <p class="text-secondary-st small mb-4">Yes. In preCICE v3 there have been many changes and improvements regarding large meshes...</p>
+          <a href="https://precice.discourse.group/t/can-precice-be-used-for-volume-coupling/27/9" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="st-card h-100">
+          <h3 class="h6 fw-bold mb-3 text-primary">Best practices for new adapters?</h3>
+          <p class="text-secondary-st small mb-4">There are <a href="community-guidelines-adapters.html">guidelines for adapters</a>, as well as for <a href="community-guidelines-application-cases.html">application cases</a>...</p>
+          <a href="https://precice.discourse.group/t/what-are-best-practices-to-write-a-new-adapter/44/3" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="st-card h-100">
+          <h3 class="h6 fw-bold mb-3 text-primary">One-way coupling?</h3>
+          <p class="text-secondary-st small mb-4">Yes! Several people are doing this already. Even though there may be other ways...</p>
+          <a href="https://precice.discourse.group/t/can-precice-be-used-for-one-way-coupling/28/2" class="st-link">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <a href="fundamentals-faq.html" class="btn btn-st-secondary">More questions &nbsp;<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="latest-news">
+  <div class="container section-st">
+    <h2 class="section-header-st text-center mb-5">Latest news</h2>
+    <div id="news-container" class="row g-4">
+      <p id="loading-news" class="text-center w-100">Loading latest news...</p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <a href="https://precice.discourse.group/c/news/5" class="btn btn-st-primary" target="_blank" rel="noopener noreferrer">
+          More news &nbsp;<i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+window.addEventListener('load', function() {
+  document.querySelectorAll('.carousel-track').forEach(function(track) {
+    var items = track.querySelectorAll('.carousel-item');
+    var totalWidth = items.length * (110 + 12); // 110px width + 12px gap
+    track.style.width = totalWidth + 'px';
+
+    var duration = (totalWidth / 2) / 20; // cinematic pace
+    track.style.animationDuration = duration + 's';
+    track.style.animationPlayState = 'running';
+    track.classList.add('ready');
+  });
+});
+</script>
+	</main>
+
+	<footer class="precice-footer" id="precice-footer">
+  <!-- Contributors Banner -->
+  <div class="precice-footer__contrib">
+    <div class="precice-footer__avatar-stack" id="footer-avatar-stack"></div>
+    <div class="precice-footer__contrib-info">
+      <div class="precice-footer__contrib-count" id="footer-contrib-count">
+        <span>…</span>
+      </div>
+      <div class="precice-footer__contrib-label">Open source community</div>
+    </div>
+    <div class="precice-footer__contrib-divider"></div>
+    <div class="precice-footer__contrib-msg">
+      preCICE is built by an amazing open-source community.
+      <a href="community-contribute-to-precice.html">Join us on GitHub →</a>
+    </div>
+  </div>
+
+  <!-- 3-col grid -->
+  <div class="precice-footer__main">
+    <!-- Col 1: Community -->
+    <div class="precice-footer__col">
+      <div class="precice-footer__col-title">Community</div>
+      <a class="precice-footer__link" href="fundamentals-literature-guide.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M4 2h8a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z"/><path d="M6 6h4M6 9h4"/>
+        </svg>
+        Cite preCICE
+      </a>
+      <a class="precice-footer__link" href="community-contribute-to-precice.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M8 2v4M8 10v4M2 8h4M10 8h4"/><circle cx="8" cy="8" r="2"/>
+        </svg>
+        Contribute
+      </a>
+      <a class="precice-footer__link" href="community-support-precice.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="8" cy="8" r="6"/><path d="M8 7v1.5M8 11h.01"/>
+        </svg>
+        Get support
+      </a>
+      <a class="precice-footer__link" href="community-training.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M2 4l6-2 6 2v5c0 3-6 5-6 5S2 12 2 9V4z"/>
+        </svg>
+        Get training
+      </a>
+    </div>
+
+    <!-- Col 2: Links + Follow -->
+    <div class="precice-footer__col">
+      <div class="precice-footer__col-title">Links</div>
+      <a class="precice-footer__link" href="https://precice.discourse.group" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M14 8A6 6 0 112 8c0 1.5.55 2.87 1.45 3.94L3 14l2.08-.45A6 6 0 0014 8z"/>
+        </svg>
+        Forum on Discourse
+      </a>
+      <a class="precice-footer__link" href="https://github.com/precice" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        preCICE on GitHub
+      </a>
+      <a class="precice-footer__link" href="fundamentals-license.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M8 2l1.5 3 3.5.5-2.5 2.5.6 3.5L8 10l-3.1 1.5.6-3.5L3 5.5 6.5 5 8 2z"/>
+        </svg>
+        License
+      </a>
+      <a class="precice-footer__link" href="about.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 7v4M8 5.5h.01"/>
+        </svg>
+        Impressum / Legal
+      </a>
+
+      <div class="precice-footer__follow">
+        <div class="precice-footer__col-title">Follow</div>
+        <div class="precice-footer__social-row">
+          <a class="precice-footer__social-chip" href="https://github.com/precice" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+          </a>
+          <a class="precice-footer__social-chip" href="https://precice.discourse.group" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 8A6 6 0 112 8c0 1.5.55 2.87 1.45 3.94L3 14l2.08-.45A6 6 0 0014 8z"/>
+            </svg>
+            Discourse
+          </a>
+          <a
+            class="precice-footer__social-chip"
+            href="https://www.linkedin.com/company/precice"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a
+            class="precice-footer__social-chip"
+            href="https://fosstodon.org/@precice"
+            target="_blank"
+            rel="noopener me"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a4 4 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522q0-1.288.66-2.046c.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764q.662.757.661 2.046z"/>
+            </svg>
+            Mastodon
+          </a>
+          <a
+            class="precice-footer__social-chip"
+            href="https://www.youtube.com/c/preCICECoupling/"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Col 3: License + meta -->
+    <div class="precice-footer__col">
+      <div class="precice-footer__col-title">License</div>
+      <a
+        class="precice-footer__license-badge"
+        rel="license"
+        href="https://creativecommons.org/licenses/by/4.0/"
+        target="_blank"
+      >
+        <img alt="Creative Commons Attribution 4.0 International License" src="images/licensebutton-by-40_88x31.png">
+      </a>
+      <div class="precice-footer__meta">
+        <div>
+          Page updated: <span>Mar 25, 2026</span>
+        </div>
+        <div>
+          Site updated: <span>Mar 29, 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="precice-footer__bottom">
+    <a class="precice-nav__brand precice-footer__brand" href="https://precice.org">
+      <img src="/images/icon_filled.svg" alt="" aria-hidden="true" height="20">
+      <img src="/images/preCICE_text_28px.svg" alt="preCICE" height="20">
+    </a>
+    <div class="precice-footer__tagline">The coupling library for partitioned multi-physics simulations</div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var stack = document.getElementById('footer-avatar-stack');
+    var countEl = document.getElementById('footer-contrib-count');
+    if (!stack || !countEl) return;
+
+    async function loadContributors() {
+      try {
+        /* Fetch top contributors for avatars */
+        const r = await fetch('https://api.github.com/repos/precice/precice/contributors?per_page=10&anon=0');
+        if (!r.ok) throw new Error('api');
+
+        const top = await r.json();
+        if (!Array.isArray(top) || top.length === 0) throw new Error('empty');
+
+        /* Fetch contributor count using per_page=1 trick */
+        let total = top.length;
+        try {
+          const r2 = await fetch('https://api.github.com/repos/precice/precice/contributors?per_page=1&anon=0');
+          const link = r2.headers.get('link') || '';
+          const match = link.match(/page=(\d+)>; rel="last"/);
+          if (match) total = parseInt(match[1], 10);
+        } catch (e) {}
+
+        /* Render avatars */
+        stack.innerHTML = '';
+        top.forEach(function (c, i) {
+          var div = document.createElement('div');
+          div.className = 'precice-footer__avatar';
+          div.title = c.login;
+          div.style.zIndex = 10 - i;
+
+          var img = document.createElement('img');
+          img.src = c.avatar_url + '&s=68';
+          img.alt = c.login;
+
+          img.onerror = function () {
+            img.remove();
+            div.textContent = (c.login || '?').slice(0, 2).toUpperCase();
+          };
+
+          div.appendChild(img);
+          stack.appendChild(div);
+        });
+
+        var rounded = Math.floor(total / 10) * 10;
+        countEl.innerHTML = '<span>' + rounded + '+</span> contributors';
+      } catch (e) {
+        stack.innerHTML = '';
+        countEl.innerHTML = '<span style="font-size:13px;opacity:0.6">Contributors</span>';
+      }
+    }
+
+    loadContributors();
+
+    /* Theme sync — watch data-theme on <html> */
+    function applyTheme() {
+      var isDark =
+        document.documentElement.getAttribute('data-theme') === 'dark' ||
+        document.documentElement.classList.contains('dark');
+      var footer = document.getElementById('precice-footer');
+      if (footer) footer.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    }
+
+    applyTheme();
+
+    new MutationObserver(applyTheme).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme', 'class'],
+    });
+  })();
+</script>
+
+
+	<script src="/js/github-queries.js"></script>
+
+	<script src="/js/news-collect.js"></script>
+
+</body>
+
+
+
+</html>

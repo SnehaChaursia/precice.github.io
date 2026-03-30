@@ -1,0 +1,324 @@
+Running `bundle install --verbose` with bundler 4.0.6
+Resolving dependencies because there's no lockfile
+Fetching https://github.com/rtomayko/posix-spawn.git
+  * Checking out revision: refs/pull/93/head
+HTTP GET https://index.rubygems.org/versions
+HTTP 304 Not Modified https://index.rubygems.org/versions
+Fetching gem metadata from https://rubygems.org/
+Looking up gems ["jekyll", "jekyll-sass-converter", "jekyll-algolia", "jekyll-relative-links", "jekyll-seo-tag", "jekyll-sitemap", "jekyll-redirect-from", "jekyll-last-modified-at", "jemoji", "jekyll-watch", "nokogiri", "open-uri", "webrick"]
+Looking up gems ["posix-spawn", "listen", "stringio", "time", "uri", "addressable", "gemoji", "html-pipeline", "activesupport", "classifier", "directory_watcher", "liquid", "maruku", "open4", "RedCloth", "rdiscount", "albino", "kramdown", "pygments.rb", "commander", "safe_yaml", "colorator", "redcarpet", "toml", "jekyll-coffeescript", "mercenary", "sass", "jekyll-gist", "jekyll-paginate", "classifier-reborn", "rouge", "pathutil", "em-websocket", "i18n", "kramdown-parser-gfm", "terminal-table", "csv", "base64", "json", "algolia_html_extractor", "algoliasearch", "filesize", "verbal_expressions", "progressbar", "sassc", "sass-embedded", "hoe", "weakling", "mini_portile", "mini_portile2", "pkg-config", "racc"]
+Looking up gems ["stemmer", "fast-stemmer", "mathn", "rake", "mutex_m", "matrix", "syntax", "rb-fchange", "rb-fsevent", "rb-inotify", "rb-kqueue", "celluloid", "celluloid-io", "ruby_dep", "logger", "psych", "rexml", "date", "rspec", "public_suffix", "escape_utils", "github-linguist", "github-markdown", "rinku", "sanitize", "selma", "zeitwerk", "builder", "memcache-client", "tzinfo", "multi_json", "minitest", "thread_safe", "concurrent-ruby", "method_source", "bigdecimal", "connection_pool", "drb", "securerandom", "benchmark", "strscan", "rubypython", "yajl-ruby", "octokit", "parslet", "eventmachine", "http_parser.rb", "unicode-display_width", "highline", "forwardable-extended", "coffee-script", "coffee-script-source", "curb", "httpclient", "hashdiff", "sass-listen", "thor", "rubyforge", "RubyInline", "gemcutter", "awesome_print", "net-ftp", "ffi", "bundler", "google-protobuf"]
+Looking up gems ["nio4r", "dotenv", "nenv", "rspec-logsplit", "timers", "cmath", "facter", "celluloid-essentials", "celluloid-extras", "celluloid-fsm", "celluloid-pool", "celluloid-supervision", "win32-api", "ZenTest", "rspec-core", "rspec-expectations", "rspec-mocks", "hpricot", "htmlentities", "crass", "nokogumbo", "jar-dependencies", "atomic", "rb_sys", "functional-ruby", "ref", "prism", "blankslate", "ruby2_keywords", "termios", "abbrev", "reline", "charlock_holmes", "mime-types", "rugged", "mini_mime", "cgi", "unicode-emoji", "ruby_parser", "execjs", "net-scp", "json_pure", "faraday", "faraday_middleware", "hashie", "multi_xml", "rash", "netrc", "sawyer", "net-protocol", "ffi-compiler"]
+Looking up gems ["coveralls", "rubocop", "CFPropertyList", "sys-admin", "win32console", "win32-dir", "windows-api", "windows-pr", "win32-security", "hocon", "sys-filesystem", "celluloid-gems", "ruby-maven", "dotenv-deployment", "rake-compiler-dock", "hitimes", "test-unit", "io-console", "ParseTree", "sexp_processor", "rspec-support", "mime-types-data", "rack", "multipart-post", "faraday-net_http", "faraday-excon", "faraday-net_http_persistent", "faraday-em_http", "faraday-em_synchrony", "faraday-httpclient", "faraday-patron", "faraday-rack", "faraday-multipart", "faraday-retry", "unicode-version", "uri_template", "net-ssh", "diff-lcs", "spruz", "oauth2", "roauth", "io-wait", "timeout"]
+Looking up gems ["libxml-ruby", "nkf", "ffi-win32-extensions", "maven-tools", "ruby-maven-libs", "power_assert", "win32ole", "win32-registry", "mkmf-lite", "configuration", "mkrf", "colorize", "rest-client", "simplecov", "term-ansicolor", "tins", "needle", "jruby-pageant", "bcrypt_pbkdf", "rbnacl", "rbnacl-libsodium", "rainbow", "parser", "backports", "powerpack", "ruby-progressbar", "astrolabe", "parallel", "jaro_winkler", "rubocop-ast", "regexp_parser", "language_server-protocol", "lint_roller", "tsort", "patron", "SexpProcessor", "net-http", "excon", "net-http-persistent", "em-http-request", "faraday-middleware", "httpauth", "jwt", "rash_alt", "version_gem", "snaky_hash"]
+Looking up gems ["pattern-match", "mize", "virtus", "rdoc", "http-cookie", "http-accept", "fiddle", "ptools", "memoist", "simplecov-html", "docile", "lockfile", "simplecov_json_formatter", "sync", "readline", "ast", "slop", "em-socksify", "cookiejar"]
+Looking up gems ["descendants_tracker", "axiom-types", "coercible", "equalizer", "protocol", "win32-file", "domain_name", "sqlite3", "erb"]
+Looking up gems ["unf", "ice_nine", "win32-file-stat", "adamantium"]
+Looking up gems ["unf_ext", "memoizable"]
+Resolving dependencies...
+Using concurrent-ruby 1.3.6
+Using connection_pool 3.0.2
+Using drb 2.2.3
+Using logger 1.7.0
+Using securerandom 0.4.1
+Using uri 1.1.1
+Using public_suffix 7.0.2
+Using mutex_m 0.3.0
+Using bundler 4.0.6
+Using base64 0.3.0
+1:  concurrent-ruby (1.3.6) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/concurrent-ruby-1.3.6.gemspec
+Using colorator 1.1.0
+14:  colorator (1.1.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/colorator-1.1.0.gemspec
+Using csv 3.3.5
+15:  csv (3.3.5) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/csv-3.3.5.gemspec
+12:  public_suffix (7.0.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/public_suffix-7.0.2.gemspec
+11:  bundler (4.0.6) from /home/sneha/.local/share/gem/ruby/3.2.0/specifications/bundler-4.0.6.gemspec
+Using ffi 1.17.3 (x86_64-linux-gnu)
+5:  connection_pool (3.0.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/connection_pool-3.0.2.gemspec
+Using forwardable-extended 2.6.0
+Using filesize 0.2.0
+5:  forwardable-extended (2.6.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/forwardable-extended-2.6.0.gemspec
+6:  securerandom (0.4.1) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/securerandom-0.4.1.gemspec
+Using gemoji 4.1.0
+Using rb-fsevent 0.11.2
+5:  gemoji (4.1.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/gemoji-4.1.0.gemspec
+Using rexml 3.4.4
+5:  rexml (3.4.4) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/rexml-3.4.4.gemspec
+Using liquid 4.0.4
+8:  logger (1.7.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/logger-1.7.0.gemspec
+Using mercenary 0.4.0
+8:  mercenary (0.4.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/mercenary-0.4.0.gemspec
+6:  rb-fsevent (0.11.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/rb-fsevent-0.11.2.gemspec
+Using rouge 4.7.0
+Using safe_yaml 1.0.5
+8:  rouge (4.7.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/rouge-4.7.0.gemspec
+Using unicode-display_width 2.6.0
+8:  unicode-display_width (2.6.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/unicode-display_width-2.6.0.gemspec
+Using webrick 1.9.2
+8:  webrick (1.9.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/webrick-1.9.2.gemspec
+Using progressbar 1.13.0
+8:  progressbar (1.13.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/progressbar-1.13.0.gemspec
+Using verbal_expressions 0.1.5
+8:  verbal_expressions (0.1.5) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/verbal_expressions-0.1.5.gemspec
+5:  liquid (4.0.4) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/liquid-4.0.4.gemspec
+Using posix-spawn 0.3.15 from https://github.com/rtomayko/posix-spawn.git (at refs/pull/93/head@0fce38e)
+13:  mutex_m (0.3.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/mutex_m-0.3.0.gemspec
+0:  base64 (0.3.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/base64-0.3.0.gemspec
+Building native extensions. This could take a while...
+Using i18n 1.14.8
+7:  drb (2.2.3) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/drb-2.2.3.gemspec
+12:  ffi (1.17.3) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/ffi-1.17.3-x86_64-linux-gnu.gemspec
+Using tzinfo 2.0.6
+6:  safe_yaml (1.0.5) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/safe_yaml-1.0.5.gemspec
+Using addressable 2.8.8
+12:  addressable (2.8.8) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/addressable-2.8.8.gemspec
+Fetching pathutil 0.16.2
+Installing stringio 3.2.0 with native extensions
+Fetching kramdown 2.5.2
+7:  tzinfo (2.0.6) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/tzinfo-2.0.6.gemspec
+Fetching terminal-table 3.0.2
+13:  i18n (1.14.8) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/i18n-1.14.8.gemspec
+11:  filesize (0.2.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/filesize-0.2.0.gemspec
+Fetching httpclient 2.9.0
+Fetching sassc 2.4.0
+Installing racc 1.8.1 with native extensions
+10:  uri (1.1.1) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/uri-1.1.1.gemspec
+Fetching rb-inotify 0.11.1
+Installing bigdecimal 4.0.1 with native extensions
+Installing date 3.5.1 with native extensions
+Installing json 2.18.1 with native extensions
+Installing http_parser.rb 0.8.1 with native extensions
+Building native extensions. This could take a while...
+Installing eventmachine 1.2.7 with native extensions
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Installing prism 1.9.0 with native extensions
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Downloaded kramdown in: 0.281s
+Installing kramdown 2.5.2
+Downloaded terminal-table in: 0.326s
+Installing terminal-table 3.0.2
+Installed terminal-table in: 0.009s
+7:  terminal-table (3.0.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/terminal-table-3.0.2.gemspec
+Installed kramdown in: 0.074s
+12:  kramdown (2.5.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/kramdown-2.5.2.gemspec
+Downloaded rb-inotify in: 0.443s
+Installing rb-inotify 0.11.1
+Installed rb-inotify in: 0.003s
+10:  rb-inotify (0.11.1) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/rb-inotify-0.11.1.gemspec
+Downloaded pathutil in: 0.529s
+Installing pathutil 0.16.2
+Installed pathutil in: 0.002s
+6:  pathutil (0.16.2) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/pathutil-0.16.2.gemspec
+Downloaded sassc in: 0.588s
+Installing sassc 2.4.0 with native extensions
+Building native extensions. This could take a while...
+Downloaded httpclient in: 0.717s
+Installing httpclient 2.9.0
+Installed httpclient in: 0.013s
+13:  httpclient (2.9.0) from /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/specifications/httpclient-2.9.0.gemspec
+Bundler::InstallError: Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1/ext/bigdecimal
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+You might have to install separate package for the ruby development
+environment, ruby-dev or ruby-devel for example.
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/bigdecimal-4.0.1 for inspection.
+Results logged to /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux-gnu/3.2.0/bigdecimal-4.0.1/gem_make.out
+
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:119:in `run'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/ext_conf_builder.rb:28:in `build'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:187:in `build_extension'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:221:in `block in build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `each'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/installer.rb:844:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:115:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:30:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:217:in `block in install'
+  /usr/lib/ruby/vendor_ruby/rubygems.rb:962:in `time'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:216:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:54:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:17:in `install_from_spec'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:133:in `do_install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:124:in `block in worker_pool'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:62:in `apply_func'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:57:in `block in process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `loop'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:90:in `block (2 levels) in create_threads'
+
+An error occurred while installing bigdecimal (4.0.1), and Bundler cannot continue.
+
+In Gemfile:
+  jemoji was resolved to 0.13.0, which depends on
+    html-pipeline was resolved to 2.14.3, which depends on
+      activesupport was resolved to 8.1.2, which depends on
+        bigdecimal
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/date-3.5.1/ext/date
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+You might have to install separate package for the ruby development
+environment, ruby-dev or ruby-devel for example.
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/date-3.5.1 for inspection.
+Results logged to /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux-gnu/3.2.0/date-3.5.1/gem_make.out
+
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:119:in `run'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/ext_conf_builder.rb:28:in `build'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:187:in `build_extension'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:221:in `block in build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `each'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/installer.rb:844:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:115:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:30:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:217:in `block in install'
+  /usr/lib/ruby/vendor_ruby/rubygems.rb:962:in `time'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:216:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:54:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:17:in `install_from_spec'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:133:in `do_install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:124:in `block in worker_pool'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:62:in `apply_func'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:57:in `block in process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `loop'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:90:in `block (2 levels) in create_threads'
+
+An error occurred while installing date (3.5.1), and Bundler cannot continue.
+
+In Gemfile:
+  open-uri was resolved to 0.5.0, which depends on
+    time was resolved to 0.4.2, which depends on
+      date
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/stringio-3.2.0/ext/stringio
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+You might have to install separate package for the ruby development
+environment, ruby-dev or ruby-devel for example.
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/gems/stringio-3.2.0 for inspection.
+Results logged to /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux-gnu/3.2.0/stringio-3.2.0/gem_make.out
+
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:119:in `run'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/ext_conf_builder.rb:28:in `build'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:187:in `build_extension'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:221:in `block in build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `each'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/installer.rb:844:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:115:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:30:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:217:in `block in install'
+  /usr/lib/ruby/vendor_ruby/rubygems.rb:962:in `time'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/rubygems.rb:216:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:54:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:17:in `install_from_spec'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:133:in `do_install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:124:in `block in worker_pool'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:62:in `apply_func'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:57:in `block in process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `loop'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:90:in `block (2 levels) in create_threads'
+
+An error occurred while installing stringio (3.2.0), and Bundler cannot continue.
+
+In Gemfile:
+  open-uri was resolved to 0.5.0, which depends on
+    stringio
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/bundler/gems/posix-spawn-0fce38ed5458/ext
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+You might have to install separate package for the ruby development
+environment, ruby-dev or ruby-devel for example.
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/bundler/gems/posix-spawn-0fce38ed5458 for inspection.
+Results logged to /home/sneha/precice.github.io/vendor/bundle/ruby/3.2.0/bundler/gems/extensions/x86_64-linux-gnu/3.2.0/posix-spawn-0fce38ed5458/gem_make.out
+
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:119:in `run'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/ext_conf_builder.rb:28:in `build'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:187:in `build_extension'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:221:in `block in build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `each'
+  /usr/lib/ruby/vendor_ruby/rubygems/ext/builder.rb:218:in `build_extensions'
+  /usr/lib/ruby/vendor_ruby/rubygems/installer.rb:844:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_gem_installer.rb:115:in `build_extensions'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/path/installer.rb:28:in `post_install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/path.rb:239:in `generate_bin'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/source/git.rb:212:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:54:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/gem_installer.rb:17:in `install_from_spec'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:133:in `do_install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:124:in `block in worker_pool'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:62:in `apply_func'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:57:in `block in process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `loop'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:54:in `process_queue'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/worker.rb:90:in `block (2 levels) in create_threads'
+
+An error occurred while installing posix-spawn (0.3.15), and Bundler cannot continue.
+
+In Gemfile:
+  posix-spawn
+
+/home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:167:in `handle_error'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:97:in `call'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer/parallel_installer.rb:66:in `call'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer.rb:193:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer.rb:78:in `block in run'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_ext.rb:39:in `block in open_file_with_flock'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_ext.rb:34:in `open'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_ext.rb:34:in `open_file_with_flock'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/rubygems_ext.rb:45:in `open_file_with_lock'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/process_lock.rb:13:in `block in lock'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/shared_helpers.rb:106:in `filesystem_access'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/process_lock.rb:12:in `lock'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer.rb:65:in `run'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/installer.rb:17:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/cli/install.rb:50:in `run'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/cli.rb:291:in `block in install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/settings.rb:143:in `temporary'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/cli.rb:290:in `install'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/cli.rb:35:in `dispatch'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/cli.rb:29:in `start'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/exe/bundle:28:in `block in <top (required)>'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/lib/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+  /home/sneha/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.6/exe/bundle:20:in `<top (required)>'
+  /home/sneha/.local/share/gem/ruby/3.2.0/bin/bundle:25:in `load'
+  /home/sneha/.local/share/gem/ruby/3.2.0/bin/bundle:25:in `<main>'

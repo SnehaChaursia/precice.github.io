@@ -15,12 +15,12 @@ We have also published our experiences and recommendations together with the [ES
 {% for pub in site.publications %}
 {% if pub.title == "Organizing software community workshops: Experiences from three independent simulation software projects" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card border-primary mb-3 panel-precice">
     <div class="panel-heading-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},

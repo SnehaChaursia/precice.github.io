@@ -1,69 +1,106 @@
-<footer class="background-dark">
+<footer class="precice-footer">
   <div class="container">
 
-{% if page.layout != "landing_page" %}
-    <div class="row equal">
-      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
-        <h2> The preCICE newsletter </h2>
-        {% include newsletter.html %}
+    <!-- Main footer columns -->
+    <div class="row g-4 footer-main">
+
+      <!-- Brand column -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo no-icon">
+            <img src="{{ 'images/preCICE_logo_42px.svg' | relative_url }}" alt="preCICE" height="28">
+            <span class="footer-logo-name">preCICE</span>
+          </a>
+          <p class="footer-tagline">Open-source coupling library for partitioned multi-physics simulations.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/precice" class="footer-social-btn no-icon" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://precice.discourse.group" class="footer-social-btn no-icon" aria-label="Discourse Forum" target="_blank" rel="noopener"><i class="fab fa-discourse"></i></a>
+            <a href="https://twitter.com/preCICE_org" class="footer-social-btn no-icon" aria-label="Twitter/X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@preCICE" class="footer-social-btn no-icon" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          </div>
+          {% if page.layout != "landing_page" %}
+          <div class="footer-nl-widget" tabindex="0" id="footer-nl-widget">
+            <div class="footer-nl-trigger" id="nl-trigger-btn">
+              <i class="fas fa-envelope me-2"></i>Subscribe to newsletter
+            </div>
+            <div class="footer-nl-expand" id="nl-expand-panel">
+              <form id="footer-newsletter-form" class="footer-nl-form">
+                <input type="email" id="nl-email-input" placeholder="your@email.com" required autocomplete="email">
+                <button type="submit" id="nl-submit-btn">Subscribe</button>
+              </form>
+              <div id="nl-success-msg" style="display:none; font-size:0.85rem; font-weight:600; color:#a8edb8; padding: 6px 0;">
+                <i class="fas fa-check-circle me-1"></i> Subscribed!
+              </div>
+            </div>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var form = document.getElementById('footer-newsletter-form');
+              if(form) {
+                form.addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  var email = document.getElementById('nl-email-input').value;
+                  window.open('https://share.mailercloud.com/form?id=R3hmWkAzMTQ0NkAwMDAwMA==&email=' + encodeURIComponent(email), '_blank');
+                  form.style.display = 'none';
+                  document.getElementById('nl-success-msg').style.display = 'block';
+                  var triggerBtn = document.getElementById('nl-trigger-btn');
+                  if (triggerBtn) {
+                    triggerBtn.innerHTML = '<i class="fas fa-check me-2"></i>Subscribed';
+                    triggerBtn.style.color = '#a8edb8';
+                    triggerBtn.style.borderColor = 'rgba(168, 237, 184, 0.5)';
+                  }
+                });
+              }
+            });
+          </script>
+          {% endif %}
         </div>
-    </div>
-{% endif %}
-
-    <div class="row equal text-center">
-      <div class="col-md-4">
-        <nav aria-label="Footer left">
-          <ul class="list-unstyled">
-            <li>
-              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
-            </li>
-            <li>
-              <a href="community-contribute-to-precice.html">Contribute</a>
-            </li>
-            <li>
-              <a href="community-support-precice.html">Get support</a>
-            </li>
-            <li>
-              <a href="community-training.html">Get training</a>
-            </li>
-          </ul>
-        </nav>
       </div>
 
-      <div class="col-md-4">
-        <nav aria-label="Footer right">
-          <ul class="list-unstyled">
-            <li>
-              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
-            </li>
-            <li>
-              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
-            </li>
-            <li>
-              <a href="fundamentals-license.html">License</a>
-            </li>
-            <li>
-              <a href="about.html">Impressum / Legal</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- Resources -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4 class="footer-col-heading">Resources</h4>
+        <ul class="footer-links list-unstyled">
+          <li><a href="fundamentals-literature-guide.html"><i class="fas fa-book-open fa-fw"></i>Cite preCICE</a></li>
+          <li><a href="installation-overview.html"><i class="fas fa-download fa-fw"></i>Install</a></li>
+          <li><a href="tutorials.html"><i class="fas fa-graduation-cap fa-fw"></i>Tutorials</a></li>
+          <li><a href="docs.html"><i class="fas fa-file-lines fa-fw"></i>Documentation</a></li>
+        </ul>
       </div>
 
-      <div class="col-md-4">
-        <p>
-        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+      <!-- Community -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4 class="footer-col-heading">Community</h4>
+        <ul class="footer-links list-unstyled">
+          <li><a href="community-contribute-to-precice.html"><i class="fas fa-code-pull-request fa-fw"></i>Contribute</a></li>
+          <li><a href="community-support-precice.html"><i class="fas fa-life-ring fa-fw"></i>Get support</a></li>
+          <li><a href="community-training.html"><i class="fas fa-chalkboard-user fa-fw"></i>Get training</a></li>
+          <li><a href="community.html"><i class="fas fa-users fa-fw"></i>Events</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Info -->
+      <div class="col-lg-3 col-md-6 ms-lg-auto">
+        <h4 class="footer-col-heading">Legal &amp; Info</h4>
+        <ul class="footer-links list-unstyled mb-3">
+          <li><a href="fundamentals-license.html"><i class="fas fa-scale-balanced fa-fw"></i>License</a></li>
+          <li><a href="about.html"><i class="fas fa-landmark fa-fw"></i>Impressum / Legal</a></li>
+        </ul>
+        <a class="no-icon d-inline-block mb-3" rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+          <img alt="Creative Commons Attribution 4.0" src="{{ 'images/licensebutton-by-40_88x31.png' | relative_url }}" style="border-radius:4px;opacity:0.85;">
         </a>
-        </p>
-        <p>
-        Page last updated: {{page.last_modified_at | date: "%b %-d, %Y" }}<br>
-        Site last updated: {{ site.time | date: "%b %-d, %Y"  }}
-        </p>
-        <p>
-        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
-        </p>
+        <p class="footer-meta"><i class="fas fa-calendar-days fa-fw me-1"></i>Page updated: {{ page.last_modified_at | date: "%b %-d, %Y" }}<br><i class="fas fa-rotate fa-fw me-1"></i>Site built: {{ site.time | date: "%b %-d, %Y" }}</p>
+        <p class="footer-meta footer-no-cookie"><i class="fas fa-shield-halved fa-fw me-1"></i>This website does not use cookies</p>
       </div>
+
     </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; {{ site.time | date: "%Y" }} preCICE Contributors &mdash; <a href="fundamentals-license.html" class="no-icon">LGPL v3</a></span>
+      <span class="footer-copy-right">Made with <i class="fas fa-heart" style="color:#ffcb6a"></i> by the preCICE community</span>
+    </div>
+
   </div>
   <script src="{{ 'js/copy-code.js' | relative_url }}"></script>
 </footer>

@@ -11,7 +11,7 @@ toc: true
 <br>
 {% assign dev_main = site.data.developer.main | sort: "name" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
+<div class="col-md-10 offset-md-1">
 <ul class="devlist">
   {% for p in dev_main %}
   <li{% if forloop.first %} class="devlist-first"{% endif %}>
@@ -45,7 +45,7 @@ Previous mantainers and their affiliation at the time of their last significant 
 <br>
 {% assign dev_premain = site.data.developer.main-inactive | sort: "name" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
+<div class="col-md-10 offset-md-1">
 <ul class="devlist">
   {% for p in dev_premain %}
   <li{% if forloop.first %} class="devlist-first"{% endif %}>
@@ -72,7 +72,7 @@ Previous contributors and their affiliation at the time of their last significan
 <br>
 {% assign dev_contrib = site.data.developer.contributors | sort: "name" %}
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
+<div class="col-md-10 offset-md-1">
 <ul class="devlist">
   {% for p in dev_contrib %}
   <li{% if forloop.first %} class="devlist-first"{% endif %}>
