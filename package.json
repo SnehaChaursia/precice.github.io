@@ -2,6 +2,9 @@
     "name": "precice-github-io",
     "version": "1.0.0",
     "scripts": {
-        "build": "bundle exec jekyll build && npx pagefind --site _site --output-path pagefind"
+        "build": "bundle exec jekyll build && npx pagefind --site _site --output-path _site/pagefind"
+    },
+    "devDependencies": {
+        "pagefind": "^1.1.0"
     }
 }
