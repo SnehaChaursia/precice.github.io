@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     codeBlocks.forEach(codeBlock => {
         const copyButton = document.createElement('button');
         copyButton.className = 'copy-code-btn';
-        copyButton.innerHTML = '<i class="fas fa-copy"></i> Copy';
+        copyButton.innerHTML = '<i class="far fa-copy"></i>';
         copyButton.setAttribute('aria-label', 'Copy code to clipboard');
 
         codeBlock.appendChild(copyButton);
@@ -37,13 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     textArea.remove();
                 }
 
-                // Visual feedback
-                const originalHtml = copyButton.innerHTML;
-                copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                // Visual feedback: White checkmark icon (background will be green in CSS)
+                copyButton.innerHTML = '<i class="fas fa-check" style="color: white;"></i>';
                 copyButton.classList.add('copied');
 
                 setTimeout(() => {
-                    copyButton.innerHTML = originalHtml;
+                    copyButton.innerHTML = '<i class="far fa-copy"></i>';
                     copyButton.classList.remove('copied');
                 }, 2000);
             } catch (err) {

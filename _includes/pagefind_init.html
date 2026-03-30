@@ -1,0 +1,219 @@
+<!-- Pagefind Search Integration -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+
+<script>
+  window.addEventListener('load', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: false,
+      translations: {
+        placeholder: "Search docs..."
+      },
+      autofocus: false
+    });
+
+    // Keyboard shortcut to focus search
+    document.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        const searchInput = document.querySelector('.pagefind-ui__search-input');
+        if (searchInput) {
+          searchInput.focus();
+        }
+      }
+    });
+
+    // Make it work with existing .search-expandable logic
+    const searchEl = document.getElementById('search');
+    searchEl.addEventListener('focusin', () => {
+       searchEl.classList.add('is-expanded');
+    });
+    searchEl.addEventListener('focusout', (e) => {
+       if (!searchEl.contains(e.relatedTarget)) {
+         searchEl.classList.remove('is-expanded');
+       }
+    });
+  });
+</script>
+
+<style>
+  /* ── Pagefind UI Overrides ── */
+  :root {
+    --pagefind-ui-primary: #0A76BB;
+    --pagefind-ui-text: var(--text-primary);
+    --pagefind-ui-background: var(--surface-raised);
+    --pagefind-ui-border: var(--border-default);
+    --pagefind-ui-font: var(--font-sans);
+  }
+
+  [data-theme="dark"] {
+    --pagefind-ui-background: #1a1e35;
+    --pagefind-ui-border: rgba(255,255,255,0.1);
+  }
+
+  /* ABSOLUTE FIX: Hide Pagefind's built-in icons to prevent overlap */
+  .pagefind-ui__form::before,
+  .pagefind-ui__search-input::before {
+    display: none !important;
+    content: none !important;
+  }
+  
+  .pagefind-ui__search-input {
+    background-image: none !important;
+  }
+
+  /* navbar search container - expanding itself for stable hover */
+  .precice-nav__search {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin: 0 40px 0 0 !important; /* Keep large gap to protect theme toggle */
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  /* Expand the CONTAINER itself */
+  .precice-nav__search:hover,
+  .precice-nav__search:focus-within {
+    width: 240px;
+  }
+
+  #search {
+    width: 100%;
+    height: 36px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .pagefind-ui__form {
+    width: 100% !important;
+    height: 36px !important; 
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .pagefind-ui__search-input {
+    background-color: #ffffff !important;
+    border: 2px solid #0A76BB !important; /* Blue border for white box */
+    border-radius: 8px !important;
+    height: 40px !important;
+    padding: 0 50px 0 38px !important;
+    font-size: 0.95rem !important;
+    opacity: 0;
+    transition: opacity 0.2s;
+    outline: none !important;
+    color: #000000 !important; /* black text */
+    line-height: normal !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  }
+
+  .search-expandable:hover .pagefind-ui__search-input,
+  .search-expandable:focus-within .pagefind-ui__search-input {
+    opacity: 1;
+  }
+
+  [data-theme="dark"] .pagefind-ui__search-input {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #0A76BB !important;
+  }
+
+  .pagefind-ui__search-clear {
+    width: 24px !important;
+    height: 24px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 12px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 50% !important;
+    color: #666 !important;
+    font-size: 0 !important; /* Hide original 'Clear' text */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    cursor: pointer !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, background-color 0.2s;
+    z-index: 20;
+  }
+
+  .search-expandable:hover .pagefind-ui__search-clear,
+  .search-expandable:focus-within .pagefind-ui__search-clear {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .pagefind-ui__search-clear:hover {
+    background-color: #e0e0e0 !important;
+    color: #333 !important;
+  }
+
+  .pagefind-ui__search-clear::before {
+    content: "✕" !important; /* Simple X icon */
+    font-size: 14px !important;
+    font-weight: bold !important;
+    display: block !important;
+  }
+
+  /* Results dropdown - BLUE background */
+  .pagefind-ui__drawer {
+    position: absolute;
+    top: 55px !important; /* clear the navbar more */
+    right: 0;
+    width: 440px !important; /* slightly wider */
+    background: #0A76BB !important; /* Brand Blue */
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+    max-height: 550px;
+    overflow-y: auto;
+    z-index: 2000 !important; /* ultra high z-index */
+    padding: 20px !important;
+    color: #ffffff !important;
+  }
+
+  /* Ensure search results text is readable on blue */
+  .pagefind-ui__result-title, 
+  .pagefind-ui__result-link,
+  .pagefind-ui__message,
+  .pagefind-ui__result-excerpt,
+  .pagefind-ui__result-link mark {
+    color: #ffffff !important;
+  }
+
+  .pagefind-ui__result-link mark {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* subtle highlight */
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+  }
+
+  .pagefind-ui__result-link:hover {
+    color: #ffcb6a !important; /* amber hover for links on blue */
+    text-decoration: underline !important;
+  }
+
+  .pagefind-ui__result {
+    border-color: rgba(255,255,255,0.15) !important;
+    padding: 15px 0 !important;
+  }
+
+  [data-theme="dark"] .pagefind-ui__drawer {
+    background: #0A76BB !important;
+  }
+  
+  @media (max-width: 768px) {
+    .pagefind-ui__drawer {
+      width: 300px;
+      right: -50px;
+    }
+  }
+</style>

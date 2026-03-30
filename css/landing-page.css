@@ -356,104 +356,109 @@ img.adapter:hover {
    TESTIMONIALS (dark section)
 ================================================================ */
 
+/* ================================================================
+   THEMED SECTIONS (background-dark)
+   - Light Mode: Vibrant Blue with White Cards
+   - Dark Mode: Original Dark-Glass aesthetic
+================================================================ */
+
 .background-dark {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Very compact section padding as requested */
+.background-dark .section {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+/* theme-specific background */
+html:not([data-theme="dark"]) .background-dark {
+  background-color: #0A76BB !important;
+}
+
+html[data-theme="dark"] .background-dark {
   background: linear-gradient(160deg, #0b1120 0%, #0d1828 100%) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .background-dark .section-header {
-  color: #f0f4ff;
-  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: #ffffff !important;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  margin-bottom: 8px;
+  margin-bottom: 24px !important;
 }
 
-/* Dark-glass testimonial cards */
-.background-dark .card.card-body {
+/* --- LIGHT MODE CARD STYLES --- */
+html:not([data-theme="dark"]) .background-dark .card {
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #000000 !important;
+  padding: 16px 18px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+html:not([data-theme="dark"]) .background-dark .card p,
+html:not([data-theme="dark"]) .background-dark .card strong,
+html:not([data-theme="dark"]) .background-dark .card a {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+/* --- DARK MODE CARD STYLES (Original) --- */
+html[data-theme="dark"] .background-dark .card {
   background: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 14px !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  padding: 28px !important;
+  padding: 24px !important;
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
-}
-
-.background-dark .card.card-body:hover {
-  background: rgba(255, 255, 255, 0.07) !important;
-  border-color: rgba(58, 157, 212, 0.45) !important;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(58, 157, 212, 0.2);
-}
-
-/* Quote text — bright enough to read on dark */
-p.quote {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.65;
-  color: #c8d6e8;
-  margin-bottom: 20px;
-}
-
-p.quote>a,
-p.quote>a:visited {
   color: #c8d6e8 !important;
-  text-decoration: none;
 }
 
-p.quote>a:hover {
-  color: #e8f0ff !important;
-  text-decoration: none;
+html[data-theme="dark"] .background-dark .card p,
+html[data-theme="dark"] .background-dark .card a {
+  color: #c8d6e8 !important;
 }
 
-/* Quote icons — orange accent */
-i.fa-quote-left {
+/* Shared Typography */
+.background-dark .card .quote {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.background-dark .card .quote i {
   color: var(--orange-500);
-  padding-right: 0.3em;
-  font-size: 0.9em;
 }
 
-i.fa-quote-right {
-  color: var(--orange-500);
-  padding-left: 0.3em;
-  font-size: 0.9em;
-}
-
-/* Avatar */
-img.testimonial {
+.background-dark img.testimonial {
   border-radius: 50%;
-  border: 2px solid rgba(58, 157, 212, 0.6);
-  box-shadow: 0 0 0 3px rgba(58, 157, 212, 0.15);
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   object-fit: cover;
-  flex-shrink: 0;
-  margin: 0 14px 0 0;
-  float: left;
+  margin-right: 12px;
 }
 
-/* Attribution text */
-.background-dark .vertical-align>div>p {
-  margin-bottom: 2px;
-  line-height: 1.35;
-}
-
-.background-dark .vertical-align>div>p strong {
-  color: #e0ecff;
-  font-size: 0.9rem;
-}
-
-.background-dark .vertical-align>div>p:last-child {
-  color: rgba(180, 200, 230, 0.7);
-  font-size: 0.78rem;
-}
-
-/* Explore button override for dark bg */
+/* Buttons */
 .background-dark .btn-primary {
-  box-shadow: 0 4px 16px rgba(10, 120, 200, 0.3);
+  background-color: #ffffff !important;
+  color: #0A76BB !important;
+  border: none !important;
+  font-weight: 700;
+  padding: 8px 18px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.background-dark .btn-primary:hover {
+  background-color: #f8f9fa !important;
+  transform: translateY(-2px);
 }
 
 

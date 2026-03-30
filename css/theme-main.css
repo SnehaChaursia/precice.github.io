@@ -3075,8 +3075,21 @@ a.footer-logo {
   filter: invert(1) hue-rotate(180deg) brightness(1.2);
 }
 
+/* UNIVERSAL LOGO PROTECTION - Ensure adapter logos are always colorful and visible */
+a.adapter img.adapter,
+.adapter img,
+img.adapter,
 [data-theme="dark"] img.adapter {
-  filter: brightness(0) invert(1);
+  filter: none !important;
+  -webkit-filter: none !important;
+  background-color: #ffffff !important;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px !important;
+  display: block !important;
+  opacity: 1 !important;
+  max-width: 100% !important;
 }
 
 /* ================================================================
