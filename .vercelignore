@@ -1,9 +1,8 @@
 vendor/
 .jekyll-cache/
 .jekyll-metadata
-_site/
-.bundle/
 rbenv.org
+
 build_trace.log
 bundle_install.log
 reference_navbar.html
