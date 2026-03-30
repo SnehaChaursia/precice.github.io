@@ -1,0 +1,4 @@
+{
+    "buildCommand": "bundle exec jekyll build && npx pagefind --site _site --output-path pagefind",
+    "outputDirectory": "_site"
+}
